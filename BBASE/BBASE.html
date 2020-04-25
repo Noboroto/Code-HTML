@@ -1,24 +1,20 @@
-<html>
-    <head>
+<head>
         <meta charset="UTF-8">
         <style>
         body
         {
             text-indent: 0;
-            font-size: 18px;
+            font-size: 20px;
         }
-        p, h2
+        p, h2,ul
         {
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
-        p
-        {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
             text-align: justify;;
         }
-        h1, thead
+        thead
         {
             text-align: center;
         }
@@ -46,25 +42,19 @@
         </style>
     </head>
     <body>
-        <p>Đâu đó trong dài Ngân hà có một hành tinh tên UWUWUWIBUWUWU ...</p>
-        <p>Là một nhà lãnh đạo tài ba đang điều hành đất nước Tây Biển Đông trước cuộc xâm lăng của quốc gia Đông Lào, Mr. Bin đang hết sức trăn trở trong việc xây dựng một căn cứ quân sự hoàn hảo để bảo vệ trung tâm cuộc kháng chiến. Bản đồ của quốc gia Tây Biển Đông được thể hiện bằng một ma trận 2 chiều kích thước M hàng x N cột (đvt: km), các hàng đánh số từ 1 đến M, các cột đánh số từ 1 đến N, ô ở hàng I cột J có mật độ rừng là A<sub>i, j</sub> cây.</p>
+        <p>Đâu đó trong dài Ngân hà có một hành tinh tên UWUWUWIBUWUWU, tại đó, Mrs. Pin là một nhà lãnh
+            đạo tài ba đang điều hành đất nước Đông Lào trước cuộc xâm lăng của quốc gia Tây Biển Đông. Cô đang hết
+            sức trăn trở trong việc xây dựng một căn cứ quân sự hoàn hảo để bảo vệ trung tâm cuộc kháng chiến. Bản
+            đồ của quốc gia Đông Lào được thể hiện bằng một ma trận 2 chiều kích thước m hàng × n cột (đvt: km);
+            các hàng được đánh số từ 1 đến m, các cột đánh số từ 1 đến n, ô ở hàng i cột j có mật độ rừng là a<sub>i, j</sub></p>
         <p>Một căn cứ quân sự là một khu đất hình chữ nhật trên bản đồ có kích thước P x Q. Trong căn cứ quân sự, chọn ra một khu đất con kích thước U x V dùng để xây trung tâm điều khiển, nằm hoàn toàn bên trong lòng khu căn cứ quân sự, cách mép căn cứ quân sự ít nhất 1 kilomet ở cả 4 phía. Những ô còn lại không nằm trong trung tâm điều khiển đóng vai trò bảo vệ trung tâm điều khiển.</p>
         <p>Đương nhiên, mật độ rừng càng cao thì độ bảo mặt và hiệu quả của căn cứ quân sự càng lớn. Tuy nhiên, ở khu trung tâm điều khiển thì cần phải phá rừng đi để xây dựng trung tâm, do đó tốn kém một lượng chi phí nhất định, nhất là khi thời gian là một nhân tố quan trọng trong thời kì chiến tranh.</p>
-        <p>Do đó người ta đưa ra định nghĩa độ hiệu quả của một cách chọn căn cứ quân sự và trung tâm điều khiển như sau: <br>Độ hiệu quả = Tổng độ che phủ rừng của các ô đóng vai trò bảo vệ xung quanh trừ đi tổng độ che phủ rừng của các ô dùng để xây dựng trung tâm điều khiển.</p>
-        <p>Lưu ý: Kích thước dữ liệu lớn. Thí sinh sử dụng C++ được khuyến khích dùng lệnh <br><code>ios_base::sync_with_stdio(0);</code><br>đặt vào đầu hàm main để tăng tốc độ đọc dữ liệu.</p>
-        <h2>Dữ liệu</h2>
-        <ul>
-            <li>Dòng thứ nhất: 6 số nguyên dương M, N, P, Q, U, V: kích thước bản đồ, kích thước căn cứ quân sự, kích thước trung tâm điều khiển. (U + 2 ≤ P ≤ M ≤ 2 000, V + 2 ≤ Q ≤ N ≤ 2 000)</li>
-            <li>Dòng thứ 2 đến dòng thứ M + 1: Mỗi dòng N số nguyên dương là mật độ che phủ rừng của từng ô. (1 ≤ A<sub>i, j</sub> ≤ 1 000 000 000)</li>
-        </ul>
+        <p>Do đó người ta đưa ra định nghĩa độ hiệu quả của một cách chọn căn cứ quân sự và trung tâm điều khiển như sau: <br/>Độ hiệu quả = Tổng độ che phủ rừng của các ô đóng vai trò bảo vệ xung quanh trừ đi tổng độ che phủ rừng của các ô dùng để xây dựng trung tâm điều khiển.</p>
+        <p>Lưu ý: Kích thước dữ liệu lớn. Thí sinh sử dụng C++ được khuyến khích dùng lệnh <br/><code>ios_base::sync_with_stdio(0);</code><br/>đặt vào đầu hàm main để tăng tốc độ đọc dữ liệu.</p>
+        <p><h2>Dữ liệu</h2>
+        <ul><li>Dòng thứ nhất: 6 số nguyên dương M, N, P, Q, U, V: kích thước bản đồ, kích thước căn cứ quân sự, kích thước trung tâm điều khiển. (U + 2 ≤ P ≤ M ≤ 2 000, V + 2 ≤ Q ≤ N ≤ 2 000)</li><li>Dòng thứ 2 đến dòng thứ M + 1: Mỗi dòng N số nguyên dương là mật độ che phủ rừng của từng ô. (1 ≤ A<sub>i, j</sub> ≤ 1 000 000 000)</li></ul></p>
         <h2>Kết quả</h2>
-        <p>
-            <ul>
-                <li>Dòng thứ nhất: Một số nguyên là giá trị độ hiệu quả tối ưu.</li>
-                <li>Dòng thứ hai: Hai số nguyên là tọa đô góc trên trái của căn cứ quân sự.</li>
-                <li>Dòng thứ ba: Hai số nguyên là tọa độ góc trên trái của trung tâm điều khiển.</li>
-            </ul> Nếu có nhiều đáp án, bất kì đáp án đúng nào cũng đều được chấp nhận.
-        </p>
+        <p><ul><li>Dòng thứ nhất: Một số nguyên là giá trị độ hiệu quả tối ưu.</li><li>Dòng thứ hai: Hai số nguyên là tọa đô góc trên trái của căn cứ quân sự.</li><li>Dòng thứ ba: Hai số nguyên là tọa độ góc trên trái của trung tâm điều khiển.</li></ul> Nếu có nhiều đáp án, bất kì đáp án đúng nào cũng đều được chấp nhận.</p>
         <table>
             <tr>
                 <th>BBASE.INP</th>
@@ -72,22 +62,16 @@
                 <th>Giải thích</th>
             </tr>
             <tr>
-                <td>5 6 3 4 1 1 <br>5 5 5 5 5 6 <br>5 5 5 5 5 5 <br>5 5 5 5 5 5 <br>5 5 5 4 5 5 <br>5 6 5 5 5 5 <br></td>
-                <td>52 <br>3 2 <br>4 4 <br></td>
+                <td>5 6 3 4 1 1 <br/>5 5 5 5 5 6 <br/>5 5 5 5 5 5 <br/>5 5 5 5 5 5 <br/>5 5 5 4 5 5 <br/>5 6 5 5 5 5 <br/></td>
+                <td>52 <br/>3 2 <br/>4 4 <br/></td>
                 <td>Khu căn cứ quân sự là hình chữ nhật (3, 2) đến (5, 5), trong đó trung tâm điều khiển chiếm duy nhất 1 ô (4, 4).</td>
             </tr>
             <tr>
-                <td>5 6 3 4 1 1 <br>5 5 5 5 5 9 <br>5 5 5 5 5 5 <br>5 5 5 5 5 5 <br>5 5 5 4 5 5 <br>5 6 5 5 5 5 <br> </td>
-                <td>54 <br> 1 3 <br>2 4 <br></td>
+                <td>5 6 3 4 1 1 <br/>5 5 5 5 5 9 <br/>5 5 5 5 5 5 <br/>5 5 5 5 5 5 <br/>5 5 5 4 5 5 <br/>5 6 5 5 5 5 <br/></td>
+                <td>54 <br/> 1 3 <br/>2 4 <br/></td>
                 <td>Một cách chọn trung tâm điều khiển khác cũng tối ưu là chọn (2, 5).</td>
             </tr>
         </table>
         <h2>Ràng buộc</h2>
-        <ul>
-            <li><b>Subtask 1:</b> n ≤ 10 (10% số điểm)</li>
-            <li><b>Subtask 2:</b> n ≤ 100 (20% số điểm)</li>
-            <li><b>Subtask 3:</b> n ≤ 1000 (45% số điểm)</li>
-            <li><b>Subtask 4:</b> n ≤ 2 000 (25% số điểm)</li>
-        </ul>
+        <ul><li><b>Subtask 1:</b> n ≤ 10 (10% số điểm)</li><li><b>Subtask 2:</b> n ≤ 100 (20% số điểm)</li><li><b>Subtask 3:</b> n ≤ 1000 (45% số điểm)</li><li><b>Subtask 4:</b> n ≤ 2 000 (25% số điểm)</li></ul>
     </body>
-</html>
