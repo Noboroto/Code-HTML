@@ -1,48 +1,53 @@
-body
-{
-    text-indent: 0;
-}
-p, h2
-{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-p
-{
-    text-align: justify;
-}
-h1, thead
-{
-    text-align: center;
-}
-img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-table
-{
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-}
-td, th
-{
-    border: 1px solid;
-}
-td
-{
-    vertical-align: text-top;
-    text-align: left;
-}
-code
-{
-    color: #ff5100;
-}
-td
-{
-    width: 30%;
-}
+        body.css
+        {
+            text-indent: 0;
+        }
+        h2.css
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p.css
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+        thead.css
+        {
+            text-align: center;
+        }
+        img.css
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table.css
+        {
+            height: 100%;
+            width: 100%;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            table-layout: fixed;
+            position:relative;
+        }
+        th.css
+        {
+            border: 1px solid;
+        }
+        td.css
+        {
+            border: 1px solid;
+            vertical-align: text-top;
+            text-align: left;
+        }
+        code.css
+        {
+            color: #ff5100;
+        }
