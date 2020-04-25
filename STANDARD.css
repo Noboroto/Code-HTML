@@ -1,0 +1,48 @@
+body
+{
+    text-indent: 0;
+}
+p, h2
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p
+{
+    text-align: justify;
+}
+h1, thead
+{
+    text-align: center;
+}
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table
+{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th
+{
+    border: 1px solid;
+}
+td
+{
+    vertical-align: text-top;
+    text-align: left;
+}
+code
+{
+    color: #ff5100;
+}
+td
+{
+    width: 30%;
+}
