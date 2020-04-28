@@ -29,25 +29,24 @@
         }
         table.css
         {
-            height: 100%;
-            width: 100%;
             border-collapse: collapse;
             margin-left: auto;
             margin-right: auto;
-            table-layout: fixed;
-            position:relative;
         }
         th.css
         {
             border: 1px solid;
+            padding: 10px;
         }
         td.css
         {
+            width: 1000em;
             border: 1px solid;
             vertical-align: text-top;
             text-align: left;
+            padding: 10px;
         }
         code.css
         {
-            color: #ff5100;
+            color: #ff5600;
         }
