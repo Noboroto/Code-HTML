@@ -1,15 +1,15 @@
-body
+body.css
 {
     text-indent: 0;
 }
-h2
+h2.css
 {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
 }
-p
+p.css
 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -17,28 +17,28 @@ p
     margin-right: auto;
     text-align: justify;
 }
-thead
+thead.css
 {
     text-align: center;
 }
-img
+img.css
 {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-table
+table.css
 {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
 }
-th
+th.css
 {
     border: 1px solid;
     padding: 10px;
 }
-td
+td.css
 {
     width: 1000em;
     border: 1px solid;
@@ -46,7 +46,7 @@ td
     text-align: left;
     padding: 10px;
 }
-code
+code.css
 {
-    color: #ff8800;
+    color: #ff5600;
 }
