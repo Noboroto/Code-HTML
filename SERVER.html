@@ -1,39 +1,97 @@
-<body>
-    <link rel="stylesheet" type="text/css" href="https://noboroto.github.io/Code-HTML/STANDARD.css">
-    <p>Trong kỳ nghỉ Tết Cổna, Mr. Bin đã sáng tạo ra được một trang web rất hữu ích trong việc cung cấp thông tin về tình hình chống dịch COVID-19 khắp thế giới cũng như cách để phòng chống dịch. Mr. Bin đã tạo trang web xong, nhưng anh cần tìm một công ty cho thuê server với giá hời để thử nghiệm sáng tạo của mình. Sau một hồi tra google, anh quyết định liên lạc với Công ty trách nhiệm vô hạn nhiều thành viên Gu Gồ.</p>
-    <p>Công ty còn dư n server chưa ai thuê, nên Mr. Bin muốn thuê cả n server này chạy song song và đồng loạt (tức là bắt đầu chạy cùng một lúc, và kết thúc cũng cùng một lúc). Mỗi server được định nghĩa bằng 5 thông số s<sub>0</sub>, s<sub>1</sub>, s<sub>2</sub>, t<sub>1</sub>, t<sub>2</sub>, (t<sub>1</sub> &le; t<sub>2</sub>). Server hoạt động theo hình thức trả tiền theo block 1 giây, tức là nếu sử dụng máy chủ trong nửa giây, 0.3 giây hay 0.7 giây đều phải trả số tiền như sử dụng trong 1 giây. Nói cách khác, nếu số giây mà server được sử dụng là t thì số giây được tính vào chi phí chính thức là [t], trong đó [x] biểu thị phép toán trả về số nguyên nhỏ nhất không nhỏ hơn x.</p>
-    <p>Số tiền phải trả ở giây thứ t với một server được tính như sau:</p>
-    <img src="https://1qx4cq.ch.files.1drv.com/y4mRrn0D3ajYdyv_WoXDOnn7HQ4tiNMU34azGkm1NGIftdT1TgOkbn_I4eHsd1Fqg9quAHEZ5wM8ceOh9DIOl7BIPmk9nXl0ay4HMtfWlVgh4ZNw8RO3n1Cn_OB_TmvsmljdZIg3X5-2Roqm3DRcaPCjpMJwSjdqQhx35R3l_AdOZYGoTe7PWUdRUU5tfmb2-oDA4v2PufRBFS0sQJ9S1O2Xw?width=246&height=105&cropmode=none" alt="SERVER-formula.png" />
-    <p>Số tiền phải trả ở giây thứ t bằng tổng số tiền phải trả cho từng server một.</p>
-    <p>Hiện tại, Mr. Bin có mang theo k đồng để trả ngay sau khi hoàn thành giao dịch. Đúng lúc kí hợp đồng, Mr. Bin muốn biết hợp đồng anh chuẩn bị có đáng không, vì thế anh muốn nhờ các bạn thí sinh tính toán xem với k đồng và n server thì Mr. Bin có thể chạy server trong tối đa bao nhiêu giây.</p>
-    <h2>Dữ liệu</h2>
-    <ul>
-        <li>Dòng thứ nhất chứa 2 số tự nhiên n, k - số lượng server mà Mr. Bin cần thuê, và ngân sách hiện tại của Mr. Bin. (1 ≤ n ≤ 2 · 10<sup>5</sup>, 1 ≤ k ≤ 10<sup>18</sup>)</li>
-        <li>n dòng tiếp theo, dòng thứ i chứa 5 số tự nhiên t<sub>1<sub>i</sub></sub>, t<sub>2<sub>i</sub></sub>, s<sub>0<sub>i</sub></sub>, s<sub>1<sub>i</sub></sub>, s<sub>2<sub>i</sub></sub> là các mốc thời gian khi thuê server, và giá thuê của 3 khoảng thời gian. (1 ≤ t<sub>1<sub>i</sub></sub>, t<sub>2<sub>i</sub></sub>, s<sub>0<sub>i</sub></sub>, s<sub>1<sub>i</sub></sub>, s<sub>2<sub>i</sub></sub> ≤ 10<sup>6</sup>)</li>
-    </ul>
-    <h2>Kết quả</h2>
-    <p>Một số nguyên duy nhất là t - số giây mà Mr. Bin có thể thuê toàn bộ n server.</p>
-    <table>
-        <tr>
-            <th>SERVER.INP</th>
-            <th>SERVER.OUT</th>
-        </tr>
-        <tr>
-            <td>2 130<br/>7 9 1 4 10<br/>7 8 16 8 1</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>2 132<br/>7 9 1 4 10<br/>7 8 16 8 1<br/></td>
-            <td>8</td>
-        </tr>
-    </table>
-    <h2>Giải thích</h2>
-    <p><b>Lưu</b> ý hai test ví dụ chỉ khác nhau ở ngân sách mà Mr. Bin hiện có.<br/> Đối chiếu theo bảng dưới, có thể thấy để chạy được server trong 8 giây cần tối thiểu 131 đồng./p>
-    <img src="https://oxmqla.ch.files.1drv.com/y4m9qW7CmfcDAKDvct62DG0XFQ5D-y01SVrXkj-AZXIWljiIcKwySS2lxQsRaIwkbvECcApApWWXH_uI5p83qfdZr3-cEXFD3KhGBXHiG1A16LrRDUeERSu0TkR9R8_VDYjqxC-oWB4MaOyzJw5JD4ESxpxSif7NOIuKKVJ2FNQzSawhRnJ3WMl3v3FbcvRhuvzdsB1e7_aVzOrBrtB9HRcoA?width=876&height=158&cropmode=none" alt="test1explain.png"/>
-    <h2>Ràng buộc</h2>
-    <ul>
-        <li><b>Subtask 1:</b> n = 1(10% số điểm)</li>
-        <li><b>Subtask 2:</b> n · t ≤ 10<sup>7</sup> (10% số điểm)</li>
-        <li><b>Subtask 3:</b> Không có ràng buộc gì thêm (80% số điểm)</li>
-    </ul>
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+        body.css
+        {
+            text-indent: 0;
+        }
+        h2.css
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p.css
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+        thead.css
+        {
+            text-align: center;
+        }
+        img.css
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table.css
+        {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th.css
+        {
+            border: 1px solid;
+            padding: 10px;
+        }
+        td.css
+        {
+            width: 1000em;
+            border: 1px solid;
+            vertical-align: text-top;
+            text-align: left;
+            padding: 10px;
+        }
+        code.css
+        {
+            color: #ff5600;
+        }
+        </style>
+    </head>
+    <body>
+        <p class="css">Trong kỳ nghỉ Tết Cổna, Mr. Bin đã sáng tạo ra được một trang web rất hữu ích trong việc cung cấp thông tin về tình hình chống dịch COVID-19 khắp thế giới cũng như cách để phòng chống dịch. Mr. Bin đã tạo trang web xong, nhưng anh cần tìm một công ty cho thuê server với giá hời để thử nghiệm sáng tạo của mình. Sau một hồi tra google, anh quyết định liên lạc với Công ty trách nhiệm vô hạn nhiều thành viên Gu Gồ.</p>
+        <p class="css">Công ty còn dư n server chưa ai thuê, nên Mr. Bin muốn thuê cả n server này chạy song song và đồng loạt (tức là bắt đầu chạy cùng một lúc, và kết thúc cũng cùng một lúc). Mỗi server được định nghĩa bằng 5 thông số s<sub>0</sub>, s<sub>1</sub>, s<sub>2</sub>, t<sub>1</sub>, t<sub>2</sub>, (t<sub>1</sub> &le; t<sub>2</sub>). Server hoạt động theo hình thức trả tiền theo block 1 giây, tức là nếu sử dụng máy chủ trong nửa giây, 0.3 giây hay 0.7 giây đều phải trả số tiền như sử dụng trong 1 giây. Nói cách khác, nếu số giây mà server được sử dụng là t thì số giây được tính vào chi phí chính thức là [t], trong đó [x] biểu thị phép toán trả về số nguyên nhỏ nhất không nhỏ hơn x.</p>
+        <p class="css">Số tiền phải trả ở giây thứ t với một server được tính như sau:</p>
+        <img class="css" src="https://1qx4cq.ch.files.1drv.com/y4mRrn0D3ajYdyv_WoXDOnn7HQ4tiNMU34azGkm1NGIftdT1TgOkbn_I4eHsd1Fqg9quAHEZ5wM8ceOh9DIOl7BIPmk9nXl0ay4HMtfWlVgh4ZNw8RO3n1Cn_OB_TmvsmljdZIg3X5-2Roqm3DRcaPCjpMJwSjdqQhx35R3l_AdOZYGoTe7PWUdRUU5tfmb2-oDA4v2PufRBFS0sQJ9S1O2Xw?width=246&height=105&cropmode=none" alt="SERVER-formula.png" />
+        <p class="css">Số tiền phải trả ở giây thứ t bằng tổng số tiền phải trả cho từng server một.</p>
+        <p class="css">Hiện tại, Mr. Bin có mang theo k đồng để trả ngay sau khi hoàn thành giao dịch. Đúng lúc kí hợp đồng, Mr. Bin muốn biết hợp đồng anh chuẩn bị có đáng không, vì thế anh muốn nhờ các bạn thí sinh tính toán xem với k đồng và n server thì Mr. Bin có thể chạy server trong tối đa bao nhiêu giây.</p>
+        <h2 class="css">Dữ liệu</h2 class="css">
+        <ul>
+            <li>Dòng thứ nhất chứa 2 số tự nhiên n, k - số lượng server mà Mr. Bin cần thuê, và ngân sách hiện tại của Mr. Bin. (1 ≤ n ≤ 2 · 10<sup>5</sup>, 1 ≤ k ≤ 10<sup>18</sup>)</li>
+            <li>n dòng tiếp theo, dòng thứ i chứa 5 số tự nhiên t<sub>1<sub>i</sub></sub>, t<sub>2<sub>i</sub></sub>, s<sub>0<sub>i</sub></sub>, s<sub>1<sub>i</sub></sub>, s<sub>2<sub>i</sub></sub> là các mốc thời gian khi thuê server, và giá thuê của 3 khoảng thời gian. (1 ≤ t<sub>1<sub>i</sub></sub>, t<sub>2<sub>i</sub></sub>, s<sub>0<sub>i</sub></sub>, s<sub>1<sub>i</sub></sub>, s<sub>2<sub>i</sub></sub> ≤ 10<sup>6</sup>)</li>
+        </ul>
+        <h2 class="css">Kết quả</h2 class="css">
+        <p class="css">Một số nguyên duy nhất là t - số giây mà Mr. Bin có thể thuê toàn bộ n server.</p>
+        <table class="css">
+            <tr>
+                <th class="css">SERVER.INP</th>
+                <th class="css">SERVER.OUT</th>
+            </tr>
+            <tr>
+                <td class="css">2 130<br/>7 9 1 4 10<br/>7 8 16 8 1</td>
+                <td class="css">7</td>
+            </tr>
+            <tr>
+                <td class="css">2 132<br/>7 9 1 4 10<br/>7 8 16 8 1<br/></td>
+                <td class="css">8</td>
+            </tr>
+        </table>
+        <h2 class="css">Giải thích</h2 class="css">
+        <p class="css"><b>Lưu</b> ý hai test ví dụ chỉ khác nhau ở ngân sách mà Mr. Bin hiện có.<br/> Đối chiếu theo bảng dưới, có thể thấy để chạy được server trong 8 giây cần tối thiểu 131 đồng./p>
+        <img class="css" src="https://oxmqla.ch.files.1drv.com/y4m9qW7CmfcDAKDvct62DG0XFQ5D-y01SVrXkj-AZXIWljiIcKwySS2lxQsRaIwkbvECcApApWWXH_uI5p83qfdZr3-cEXFD3KhGBXHiG1A16LrRDUeERSu0TkR9R8_VDYjqxC-oWB4MaOyzJw5JD4ESxpxSif7NOIuKKVJ2FNQzSawhRnJ3WMl3v3FbcvRhuvzdsB1e7_aVzOrBrtB9HRcoA?width=876&height=158&cropmode=none" alt="test1explain.png"/>
+        <h2 class="css">Ràng buộc</h2 class="css">
+        <ul>
+            <li><b>Subtask 1:</b> n = 1(10% số điểm)</li>
+            <li><b>Subtask 2:</b> n · t ≤ 10<sup>7</sup> (10% số điểm)</li>
+            <li><b>Subtask 3:</b> Không có ràng buộc gì thêm (80% số điểm)</li>
+        </ul>
+    </body>
+</html>

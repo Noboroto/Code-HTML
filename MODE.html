@@ -1,33 +1,89 @@
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body.css
+        {
+            text-indent: 0;
+        }
+        h2.css
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p.css
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+        thead.css
+        {
+            text-align: center;
+        }
+        img.css
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table.css
+        {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th.css
+        {
+            border: 1px solid;
+            padding: 10px;
+        }
+        td.css
+        {
+            width: 1000em;
+            border: 1px solid;
+            vertical-align: text-top;
+            text-align: left;
+            padding: 10px;
+        }
+        code.css
+        {
+            color: #ff5600;
+        }
+    </style>
+</head>
 <body>
-    <link rel="stylesheet" type="text/css" href="https://noboroto.github.io/Code-HTML/STANDARD.css">
-    <p>Dịch COVID-19 hoành hành đã mang đến một mốt thời trang mới hoàn toàn khác lạ so với những mốt thời trang trước kia. Chiếc khẩu trang, một vật dụng bình thường, bỗng trở thành xu thế thời trang mới trong những tháng đầu năm 2020. Đó là mốt mà chúng ta thường nghĩ đến, còn mốt của Mr. Bin lại là một điều khác hoàn toàn không liên quan.</p>
-    <p>Mr. Bin trong một lần gia sư đứa em về thống kê thì có đi qua một khái niệm gọi là mốt (mode). Mốt của một dãy số được định nghĩa là giá trị có số lần xuất hiện nhiều nhất trong dãy số đó, lấy ví dụ trong dãy số {3; 5; 4; 5} thì mốt của dãy số này là 5 vì giá trị này xuất hiện tới 2 lần trong khi các giá trị còn lại chỉ xuất hiện 1 lần duy nhất.</p>
-    <p>Trong toán học, nếu trong dãy số có nhiều giá trị có số lần xuất hiện nhiều nhất thì các giá trị đó cùng được gọi là mốt và dãy số đó được xét là có nhiều mốt. Mr. Bin không thích định nghĩa này nên anh quyết định thay đổi định nghĩa của mốt: trong trường hợp có nhiều giá trị như vậy thì giá trị nhỏ nhất trong các giá trị được xét là mốt của dãy số đó. Ví dụ, nếu chúng ta thêm phần tử 4 vào dãy số {3; 5; 4; 5} thì dãy số sẽ có 2 mốt là 4 và 5 theo định nghĩa thông thường; nhưng theo định nghĩa của Mr. Bin thì dãy số sẽ có chỉ có một mốt duy nhất là 4.</p>
-    <p>Mr. Bin thấy rằng việc định nghĩa lại khái niệm "mốt" khiến việc nghiên cứu dãy số trở nên thú vị hơn. Từ đó, Mr. Bin có một bài toán thú vị muốn hỏi bạn: cho một dãy số khác rỗng, có bao nhiêu dãy con khác rỗng của dãy số này có mốt là k.</p>
-    <p>Nhắc lại, dãy con của một dãy số là một dãy thu được từ việc xóa một vài phần tử (có thể là 0) trong dãy - ví dụ với dãy d = {3; 5; 4; 5} thì một số dãy con hợp lệ của d là {d<sub>1</sub>; d<sub>3</sub>} = {3; 4}, {d<sub>2</sub>; d<sub>3</sub>; d<sub>4</sub>} = {5; 4; 5}, {d<sub>1</sub>; d<sub>2</sub>} = {3; 5}, {d<sub>1</sub>; d<sub>4</sub>} = {3; 5}, {d<sub>1</sub>; d<sub>2</sub>; d<sub>3</sub>; d<sub>4</sub>} = {3; 5; 4; 5} và ∅. Hai dãy con được gọi là khác nhau nếu một phần tử được chọn ở một dãy con nhưng không được chọn ở dãy con còn lại - ví dụ với dãy d nêu trên thì các dãy con được nêu của d đều đôi một khác nhau.</p>
-    <p>Vì số dãy con thỏa mãn có thể rất lớn nên Mr. Bin yêu cầu bạn xuất ra phần dư của số đó khi chia cho 10<sup>9</sup> + 7.</p>
-    <h2>Dữ liệu</h2>
+    <p class="css">Dịch COVID-19 hoành hành đã mang đến một mốt thời trang mới hoàn toàn khác lạ so với những mốt thời trang trước kia. Chiếc khẩu trang, một vật dụng bình thường, bỗng trở thành xu thế thời trang mới trong những tháng đầu năm 2020. Đó là mốt mà chúng ta thường nghĩ đến, còn mốt của Mr. Bin lại là một điều khác hoàn toàn không liên quan.</p>
+    <p class="css">Mr. Bin trong một lần gia sư đứa em về thống kê thì có đi qua một khái niệm gọi là mốt (mode). Mốt của một dãy số được định nghĩa là giá trị có số lần xuất hiện nhiều nhất trong dãy số đó, lấy ví dụ trong dãy số {3; 5; 4; 5} thì mốt của dãy số này là 5 vì giá trị này xuất hiện tới 2 lần trong khi các giá trị còn lại chỉ xuất hiện 1 lần duy nhất.</p>
+    <p class="css">Trong toán học, nếu trong dãy số có nhiều giá trị có số lần xuất hiện nhiều nhất thì các giá trị đó cùng được gọi là mốt và dãy số đó được xét là có nhiều mốt. Mr. Bin không thích định nghĩa này nên anh quyết định thay đổi định nghĩa của mốt: trong trường hợp có nhiều giá trị như vậy thì giá trị nhỏ nhất trong các giá trị được xét là mốt của dãy số đó. Ví dụ, nếu chúng ta thêm phần tử 4 vào dãy số {3; 5; 4; 5} thì dãy số sẽ có 2 mốt là 4 và 5 theo định nghĩa thông thường; nhưng theo định nghĩa của Mr. Bin thì dãy số sẽ có chỉ có một mốt duy nhất là 4.</p>
+    <p class="css">Mr. Bin thấy rằng việc định nghĩa lại khái niệm "mốt" khiến việc nghiên cứu dãy số trở nên thú vị hơn. Từ đó, Mr. Bin có một bài toán thú vị muốn hỏi bạn: cho một dãy số khác rỗng, có bao nhiêu dãy con khác rỗng của dãy số này có mốt là k.</p>
+    <p class="css">Nhắc lại, dãy con của một dãy số là một dãy thu được từ việc xóa một vài phần tử (có thể là 0) trong dãy - ví dụ với dãy d = {3; 5; 4; 5} thì một số dãy con hợp lệ của d là {d<sub>1</sub>; d<sub>3</sub>} = {3; 4}, {d<sub>2</sub>; d<sub>3</sub>; d<sub>4</sub>} = {5; 4; 5}, {d<sub>1</sub>; d<sub>2</sub>} = {3; 5}, {d<sub>1</sub>; d<sub>4</sub>} = {3; 5}, {d<sub>1</sub>; d<sub>2</sub>; d<sub>3</sub>; d<sub>4</sub>} = {3; 5; 4; 5} và ∅. Hai dãy con được gọi là khác nhau nếu một phần tử được chọn ở một dãy con nhưng không được chọn ở dãy con còn lại - ví dụ với dãy d nêu trên thì các dãy con được nêu của d đều đôi một khác nhau.</p>
+    <p class="css">Vì số dãy con thỏa mãn có thể rất lớn nên Mr. Bin yêu cầu bạn xuất ra phần dư của số đó khi chia cho 10<sup>9</sup> + 7.</p>
+    <h2 class="css">Dữ liệu</h2 class="css">
     <ul>
         <li>Dòng thứ nhất chứa 2 số tự nhiên n, k - số phần tử của dãy số và giá trị mà Mr. Bin muốn tìm hiểu. (1 ≤ n ≤ 10<sup>3</sup>, k ≤ 10<sup>9</sup>)</li>
         <li>Dòng thứ hai chứa n số tự nhiên a<sub>i</sub> là các phần tử của dãy số mà Mr. Bin muốn tìm hiểu. (a<sub>i</sub> ≤ 10<sup>9</sup>)</li>
     </ul>
-    <h2>Kết quả</h2>
-    <p>Một số nguyên duy nhất là phần dư của số lượng số dãy con khác rỗng có mốt là k khi chia cho 10<sup>9</sup> + 7.</p>
-    <table>
+    <h2 class="css">Kết quả</h2 class="css">
+    <p class="css">Một số nguyên duy nhất là phần dư của số lượng số dãy con khác rỗng có mốt là k khi chia cho 10<sup>9</sup> + 7.</p>
+    <table class="css">
         <tr>
-            <th>MODE.INP</th>
-            <th>MODE.OUT</th>
+            <th class="css">MODE.INP</th>
+            <th class="css">MODE.OUT</th>
         </tr>
             <tr>
-                <td>4 4<br/>3 5 4 5 <br/></td>
-                <td>3</td>
+                <td class="css">4 4<br/>3 5 4 5 <br/></td>
+                <td class="css">3</td>
             </tr>
         <tr>
-            <td>5 4<br/>3 5 4 5 4<br/></td>
-            <td>14</td>
+            <td class="css">5 4<br/>3 5 4 5 4<br/></td>
+            <td class="css">14</td>
         </tr>
     </table>
-    <h2>Ràng buộc</h2>
+    <h2 class="css">Ràng buộc</h2 class="css">
     <ul>
         <li><b>Subtask 1:</b> n ≤ 10<sup>3</sup>, k, a<sub>i</sub> ≤ 10<sup>9</sup>; với mọi i, j thỏa 1 ≤ i, j ≤ n và i &ne; j thì a<sub>i</sub> &ne; a<sub>j</sub> (15% số điểm)</li>
         <li><b>Subtask 2:</b> n ≤ 15, k, ai ≤ 100 (10% số điểm)</li>
