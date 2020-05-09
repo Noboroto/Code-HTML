@@ -1,91 +1,35 @@
-<head>
-    <meta charset="UTF-8"/>
-    <style>
-                body.css
-        {
-            text-indent: 0;
-        }
-        h2.css
-        {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        p.css
-        {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: justify;
-        }
-        thead.css
-        {
-            text-align: center;
-        }
-        img.css
-        {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        table.css
-        {
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        th.css
-        {
-            border: 1px solid;
-            padding: 10px;
-        }
-        td.css
-        {
-            width: 1000em;
-            border: 1px solid;
-            vertical-align: text-top;
-            text-align: left;
-            padding: 10px;
-        }
-        code.css
-        {
-            color: #ff5600;
-        }
-    </style>
-</head>
-<body class="css">
-    <p class="css">Nếu bạn tham gia kì thi đầu tiên của Wứu Contest, bạn sẽ nhớ Mr. Bin từng hỏi các bạn về một bài toán đếm rất đơn giản. Mr. Bin khá thất vọng khi nhìn kết quả nên đành phải ra một bài khác dễ hơn để các bạn còn đường sống.</p>
-    <p class="css">Lần này, Mr. Bin sẽ đưa ra một hàm số gần gũi và trực quan hơn. Hàm số (gọi là β(n)) được định nghĩa là số hình chữ nhật con thỏa mãn những điều kiện sau:</p>
+<body>
+    <link rel="stylesheet" type="text/css" href="https://noboroto.github.io/Code-HTML/STANDARD.css">
+    <p>Nếu bạn tham gia kì thi đầu tiên của Wứu Contest, bạn sẽ nhớ Mr. Bin từng hỏi các bạn về một bài toán đếm rất đơn giản. Mr. Bin khá thất vọng khi nhìn kết quả nên đành phải ra một bài khác dễ hơn để các bạn còn đường sống.</p>
+    <p>Lần này, Mr. Bin sẽ đưa ra một hàm số gần gũi và trực quan hơn. Hàm số (gọi là β(n)) được định nghĩa là số hình chữ nhật con thỏa mãn những điều kiện sau:</p>
     <ul><li>Có tọa độ bốn đỉnh là số nguyên nằm trong đoạn [0; n].</li><li>Có các cạnh song song với các trục tọa độ.</li></ul>
-    <img class="css" src="https://oijpzg.ch.files.1drv.com/y4m4Dbk0eJEUr8JVzIMQxWXVqAY5ICnN-t2txXcX8ZOm_W-lKstkYv3gIYXGhkfzIkx478mqux3cWwD99d4HjSEHbo_Q8urM3I3l65xeuU2zPkMsueUztCtHs5O0Bt37Hig4ZDEHrM3kBU9E7WpxBtOpF9N0ZN9QKMQQhc6xtGW2ajjWqE37Mkjcx6qXq5DBH2GzPzgoZpzu1JnG8caPLXM1w?width=977&height=182&cropmode=none" alt="GRID-example.png">
-    <p class="css">Lấy ví dụ, với n = 3, ta đếm được 9 hình chữ nhật có kích thước 1 × 1, 6 hình chữ nhật có kích thước 1 × 2, 3 hình chữ nhật có kích thước 1 × 3, 6 hình chữ nhật có kích thước 2 × 1, 4 hình chữ nhật có kích thước 2 × 2, 2 hình chữ nhật có kích thước 2 × 3, 3 hình chữ nhật có kích thước 3 × 1, 2 hình chữ nhật có kích thước 3 × 2 và 1 hình chữ nhật có kích thước 3 × 3; tổng cộng có 36 hình chữ nhật. Như vậy, giá trị của β(3) là 36.</p>
-    <p class="css">Dĩ nhiên, khi n càng lớn thì Mr. Bin không còn đủ sức để tính giá trị của β khi đó. Vì thế, Mr. Bin muốn nhờ bạn tính giá trị của hàm đó giúp anh ta. Để thuận tiện hơn, vì trong dịp cách ly xã hội anh ta ngốn tới 12 tiếng cày game 2048 nên anh muốn bạn tìm phần dư của phép tính 2048 · β(n) khi chia cho 10<sup>9</sup> + 7.</p>
-    <h2 class="css">Dữ liệu</h2 class="css">
-    <p class="css">Một số nguyên dương duy nhất là n - kích thước của lưới. (n ≤ 10<sup>9</sup>).</p>
-    <h2 class="css">Kết quả</h2 class="css">
-    <p class="css">một số nguyên duy nhất là phần dư của phép tính 2048 · β(n) khi chia cho
+    <img src="https://oijpzg.ch.files.1drv.com/y4m4Dbk0eJEUr8JVzIMQxWXVqAY5ICnN-t2txXcX8ZOm_W-lKstkYv3gIYXGhkfzIkx478mqux3cWwD99d4HjSEHbo_Q8urM3I3l65xeuU2zPkMsueUztCtHs5O0Bt37Hig4ZDEHrM3kBU9E7WpxBtOpF9N0ZN9QKMQQhc6xtGW2ajjWqE37Mkjcx6qXq5DBH2GzPzgoZpzu1JnG8caPLXM1w?width=977&height=182&cropmode=none" alt="GRID-example.png">
+    <p>Lấy ví dụ, với n = 3, ta đếm được 9 hình chữ nhật có kích thước 1 × 1, 6 hình chữ nhật có kích thước 1 × 2, 3 hình chữ nhật có kích thước 1 × 3, 6 hình chữ nhật có kích thước 2 × 1, 4 hình chữ nhật có kích thước 2 × 2, 2 hình chữ nhật có kích thước 2 × 3, 3 hình chữ nhật có kích thước 3 × 1, 2 hình chữ nhật có kích thước 3 × 2 và 1 hình chữ nhật có kích thước 3 × 3; tổng cộng có 36 hình chữ nhật. Như vậy, giá trị của β(3) là 36.</p>
+    <p>Dĩ nhiên, khi n càng lớn thì Mr. Bin không còn đủ sức để tính giá trị của β khi đó. Vì thế, Mr. Bin muốn nhờ bạn tính giá trị của hàm đó giúp anh ta. Để thuận tiện hơn, vì trong dịp cách ly xã hội anh ta ngốn tới 12 tiếng cày game 2048 nên anh muốn bạn tìm phần dư của phép tính 2048 · β(n) khi chia cho 10<sup>9</sup> + 7.</p>
+    <h2>Dữ liệu</h2>
+    <p>Một số nguyên dương duy nhất là n - kích thước của lưới. (n ≤ 10<sup>9</sup>).</p>
+    <h2>Kết quả</h2>
+    <p>một số nguyên duy nhất là phần dư của phép tính 2048 · β(n) khi chia cho
         109 + 7.</p>
-    <table class="css">
+    <table>
         <tr>
-            <th class="css">GRID.INP</th>
-            <th class="css">GRID.OUT</th>
+            <th>GRID.INP</th>
+            <th>GRID.OUT</th>
         </tr>
         <tr>
-            <td class="css">3</td>
-            <td class="css">73728</td>
+            <td>3</td>
+            <td>73728</td>
         </tr>
         <tr>
-            <td class="css">2</td>
-            <td class="css">18432</td>
+            <td>2</td>
+            <td>18432</td>
         </tr>
         <tr>
-            <td class="css">1</td>
-            <td class="css">2048</td>
+            <td>1</td>
+            <td>2048</td>
         </tr>
     </table>
-    <h2 class="css">Ràng buộc</h2 class="css">
+    <h2>Ràng buộc</h2>
     <ul>
         <li><b>Subtask 1:</b> n &le; 10<sup>3</sup> (50% số điểm)</li>
         <li><b>Subtask 2:</b> Không còn ràng buộc nào khác (50% số điểm)</li>
