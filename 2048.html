@@ -1,0 +1,35 @@
+<body>
+    <link href="https://noboroto.github.io/Code-HTML/STANDARD.css" type="text/css" rel="stylesheet" />
+    <h1 class="prob">2048</h1>
+    <p class="prob">2048 là game ai cũng biết, không biết thì ghé vô <a href="https://vi.wikipedia.org/wiki/2048_(tr%C3%B2_ch%C6%A1i)">đây</a></p>
+    <p class="prob">2048 là một trò chơi giải đố (yes). Mục tiêu của trò chơi là trượt các khối vuông mang số trên một lưới vuông bằng 4 phím mũi tên, để kết hợp chúng lại và tạo ra khối vuông có giá trị 2048.</p>
+    <p class="prob">Ở mỗi lượt chơi aka mỗi lần nhấn nút, một khối mang số mới xuất hiện ngẫu nhiên ở phần trống của bàn chơi, mang giá trị ngẫu nhiên là 2 hoặc 4.</p>
+    <p class="prob">Các khối chứa số trượt về một hướng đã chọn cho đến khi bị dừng bởi: một khối mang giá trị khác khối hiện tại hoặc rìa của lưới vuông. Khi 2 khối mang giá trị như nhau trượt vào nhau sẽ hợp thành một khối mới, mang giá trị bằng tổng 2 khối cũ. Khối mới vừa được tạo không thể cộng dồn tiếp tục với ô bên cạnh cho đến lượt đi tiếp theo</p>
+    <p class="prob">Hôm nay bạn hãy hoàn thành các yêu cầu sau</p>
+    <ol>
+        <li>Nhập 9 số và in ra màn hình 9 số đã nhập dưới dạng ô lưới 3x3, các ô có biến giá trị = 0 thì in ra "_"</li>
+        <li>Tiếp tục nhập 'a' hoặc 'd' để dịch trái hoặc phải, các phần tử có giá trị bằng nhau cộng dồn lên số lớn hơn, các yếu tố khác thì đọc như trên. Sau đó in lại ô lưới 3x3</li>
+    </ol>
+    <h2 class="prob">Dữ liệu</h2>
+    <ul>
+        <li>Dòng 1: 9 số nguyên a theo đề bài (0 &le; input &le; 2048)</li>
+        <li>Dòng 2: Một kí tự 'a' hoặc 'd'</li>
+    </ul>
+    </p>
+    <H2 class="prob">Kết quả</H2>
+    <ul>
+        <li>Dòng đầu: "Grid:"</li>
+        <li>3 dòng tiếp theo: kết quả của yêu cầu thứ nhất</li>
+        <li>Dòng kế tiếp: "Next move:"</li>
+        <li>3 dòng kế tiếp: kết quả của yêu cầu thứ hai</li>
+    </ul>
+    <table class="prob">
+        <tr>
+            <th class="prob">INPUT</th>
+            <th class="prob">OUTPUT</th>
+        </tr>
+        <tr>
+            <td class="prob">2 0 2 4 4 8 0 0 8<br/>d</td>
+            <td class="prob">Grid:<br/>2 _ 2<br/> 4 4 8<br/>_ _ 8<br/>Next move:</br>_ _ 4<br/>_ 8 8<br/> _ _ 8<br/> </td> </tr>
+    </table>
+</body>
