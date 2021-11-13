@@ -1,28 +1,35 @@
 <body>
     <link href="https://noboroto.github.io/Code-HTML/STANDARD.css" type="text/css" rel="stylesheet" />
-    <h1 class="prob">2048E - 2048 Phiên bản dễ</h1>
+    <h1 class="prob">2048H - 2048 Phiên bản khó</h1>
     <p class="prob">2048 là game ai cũng biết, không biết thì ghé vô <a href="https://vi.wikipedia.org/wiki/2048_(tr%C3%B2_ch%C6%A1i)">đây</a></p>
     <p class="prob">2048 là một trò chơi giải đố (yes). Mục tiêu của trò chơi là trượt các khối vuông mang số trên một lưới vuông bằng 4 phím mũi tên, để kết hợp chúng lại và tạo ra khối vuông có giá trị 2048.</p>
     <p class="prob">Ở mỗi lượt chơi aka mỗi lần nhấn nút, một khối mang số mới xuất hiện ngẫu nhiên ở phần trống của bàn chơi, mang giá trị ngẫu nhiên là 2 hoặc 4.</p>
     <p class="prob">Các khối chứa số trượt về một hướng đã chọn cho đến khi bị dừng bởi: một khối mang giá trị khác khối hiện tại hoặc rìa của lưới vuông. Khi 2 khối mang giá trị như nhau trượt vào nhau sẽ hợp thành một khối mới, mang giá trị bằng tổng 2 khối cũ. Khối mới vừa được tạo không thể cộng dồn tiếp tục với ô bên cạnh cho đến lượt đi tiếp theo</p>
     <p class="prob">Hôm nay bạn hãy hoàn thành các yêu cầu sau</p>
     <ol>
-        <li>Nhập 9 số và in ra màn hình 9 số đã nhập dưới dạng ô lưới 3x3, các ô có biến giá trị = 0 thì in ra "_"</li>
+        <li>Nhập n*n số và in ra màn hình n*n số đã nhập dưới dạng ô lưới n hàng n cột, các ô có biến giá trị = 0 thì in ra "_"</li>
         <li>Tiếp tục nhập 'a' hoặc 'd' để dịch trái hoặc phải, các phần tử có giá trị bằng nhau cộng dồn lên số lớn hơn, các yếu tố khác thì đọc như trên. Sau đó in lại ô lưới 3x3</li>
     </ol>
     <h2 class="prob">Dữ liệu</h2>
     <ul>
-        <li>Dòng 1: 9 số nguyên a theo đề bài (0 &le; input &le; 2048)</li>
-        <li>Dòng 2: Một kí tự 'a' hoặc 'd'</li>
+        <li>Dòng 1: 1 số nguyên n (4 &le; n &le; 400)</li>
+        <li>Dòng 2: n * n số nguyên a<sub>i</sub> theo đề bài (0 &le; i &lt; n; 0 &le; a<sub>i</sub> &le; 2048)</li>
+        <li>Dòng 3: Một kí tự 'a' hoặc 'd'</li>
     </ul>
     </p>
     <H2 class="prob">Kết quả</H2>
     <ul>
         <li>Dòng đầu: "Grid:"</li>
-        <li>3 dòng tiếp theo: kết quả của yêu cầu thứ nhất</li>
+        <li>n dòng tiếp theo: kết quả của yêu cầu thứ nhất</li>
         <li>Dòng kế tiếp: "Next move:"</li>
-        <li>3 dòng kế tiếp: kết quả của yêu cầu thứ hai</li>
+        <li>n dòng kế tiếp: kết quả của yêu cầu thứ hai</li>
     </ul>
+    <h2 class="prob">Ràng buộc</h2 class="prob">
+        <ul>
+            <li><b>Subtask 1:</b> 4 &le; n &le; 10 (40% số điểm)</li>
+            <li><b>Subtask 2:</b> 10 &lt; n &le; 20 (40% số điểm)</li>
+            <li><b>Subtask 3:</b> 20 &lt; n &le; 50 (20% số điểm)</li>
+</ul>
     <table class="prob">
         <tr>
             <th class="prob">INPUT</th>
@@ -32,5 +39,20 @@
             <td class="prob">2 0 2 4 4 8 0 0 8<br/>d</td>
             <td class="prob">Grid:<br/>2 _ 2<br/> 4 4 8<br/>_ _ 8<br/>Next move:</br>_ _ 4<br/>_ 8 8<br/> _ _ 8<br/> </td>
         </tr>
+        <tr>
+            <td class="prob">5<br/>256 4 2048 64 4 2 1024 8 64 16 128 2048 128 0 0 256 4 0 4 0 512 1024 32 64 1024<br/>d</td>
+            <td class="prob">Grid:<br/>
+                256 4 2048 64 4 <br/>
+                2 1024 8 64 16 <br/>
+                128 2048 128 _ _ <br/>
+                256 4 _ 4 _ <br/>
+                512 1024 32 64 1024 <br/>
+                Next move:<br/>
+                256 4 2048 64 4 <br/>
+                2 1024 8 64 16 <br/>
+                _ _ 128 2048 128 <br/>
+                _ _ _ 256 8 <br/>
+                512 1024 32 64 1024 <br/>
+            </td></tr>
     </table>
 </body>
