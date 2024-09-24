@@ -1,36 +1,40 @@
 <style>
-    p {
-        margin: 0 0 15px 0;
-        font-size: 14px;
-        font-family:Be Vietnam Pro,sans-serif;
-        color: #485aa1;
-        text-align: left;
-        line-height: 24px;
-        text-align: left;
-    }
+	h3 {
+		color: #485aa1;
+		font-family: Be Vietnam Pro, sans-serif;
+	}
+	p {
+		margin: 0 0 15px 0;
+		font-size: 14px;
+		font-family: Be Vietnam Pro, sans-serif;
+		color: #485aa1;
+		text-align: left;
+		line-height: 24px;
+		text-align: left;
+	}
 
-    ol {
-        font-size: 14px;
-        font-family:Be Vietnam Pro,sans-serif;
-        color: #485aa1;
-        text-align: left;
-        line-height: 24px;
-        text-align: left;
-    }
+	ol {
+		font-size: 14px;
+		font-family: Be Vietnam Pro, sans-serif;
+		color: #485aa1;
+		text-align: left;
+		line-height: 24px;
+		text-align: left;
+	}
 
-    ul {
-        font-size: 14px;
-        font-family:Be Vietnam Pro,sans-serif;
-        color: #485aa1;
-        text-align: left;
-        line-height: 24px;
-        text-align: left;
-    }
+	ul {
+		font-size: 14px;
+		font-family: Be Vietnam Pro, sans-serif;
+		color: #485aa1;
+		text-align: left;
+		line-height: 24px;
+		text-align: left;
+	}
 
-    .highlight {
-        font-weight: bold;
-        color: #6ec1cf
-    }
+	.highlight {
+		font-weight: bold;
+		color: #6ec1cf
+	}
 </style>
 <p>
 	Xin chào bạn <span class="highlight">{{Name}}</span>,
@@ -38,13 +42,15 @@
 <p>
 	Chúng mình đã nhận được thông tin đơn đặt hàng dây đeo của bạn. Cảm ơn bạn đã ủng hộ SAB in HCMUS!
 </p>
-<h3 class="highlight">THÔNG TIN ĐƠN HÀNG</h3>
-<p>
-Họ tên: <span class="highlight">{{Name}}</span><br/>
-Số điện thoại <span class="highlight">{{Phone}}</span><br/>
-Tổng số tiền: <span class="highlight">{{Total}}.000 VNĐ</span><br/>
-Số lượng sản phẩm như sau:
-</p>
+<h3><b>THÔNG TIN ĐẶT HÀNG</b></h3>
+<ul>
+	<li>Họ tên: <span class="highlight">{{Name}}</span></li>
+	<li>Ngày đặt hàng: <span class="highlight">{{OrderDate}}</span></li>
+	<li>Số điện thoại <span class="highlight">{{Phone}}</span></li>
+	<li>Tổng số tiền: <span class="highlight">{{Total}}.000 VNĐ</span></li>
+</ul>
+
+<h3><b>CHI TIẾT ĐƠN HÀNG</b></h3>
 <ul>
 	<li>Dây đeo loại 1: <span class="highlight">{{lanyard1Amount}}</span></li>
 	<li>Dây đeo loại 2: <span class="highlight">{{lanyard2Amount}}</span></li>
@@ -52,19 +58,20 @@ Số lượng sản phẩm như sau:
 	<li>Vỏ thẻ đen: <span class="highlight">{{blackHolderAmount}}</span></li>
 	<li>Vỏ thẻ xám: <span class="highlight">{{grayHolderAmount}}</span> </li>
 </ul>
-<h3 class="highlight">THỜI GIAN VÀ ĐỊA ĐIỂM NHẬN HÀNG</h3>
+<h3><b>THỜI GIAN VÀ ĐỊA ĐIỂM NHẬN HÀNG</b></h3>
 <ul>
 	<li>Thời gian: <b>Từ 7:30 - 11:00 và 14:00-17:00</b> từ ngày 30/9 đến ngày 5/10</li>
 	<li>Địa điểm: <b>bên hông sảnh I, cơ sở 1 Nguyễn Văn Cừ nhé.</b></li>
+</ul>
 <p>
 	Các bạn nào <b>Chưa thanh toán đơn hàng</b> có thể lên web để thực hiện đơn hàng mới và thanh toán nha.
 </p>
 <p>
-	Nếu có bất kỳ thắc mắc nào, vui lòng liên hệ với chúng mình bằng cách phản hồi email này hoặc fanpage <a href="https://www.facebook.com/sab.ctda">SAB in HCMUS</a>.
+	Nếu có bất kỳ thắc mắc nào, vui lòng liên hệ với chúng mình bằng cách phản hồi email này hoặc fanpage <a
+		href="https://www.facebook.com/sab.ctda">SAB in HCMUS</a>.
 </p>
 <p>
-    Trân trọng,<br>
-    <span class="highlight">SAB
-        in HCMUS</span>
+	Trân trọng,<br>
+	<span class="highlight">SAB
+		in HCMUS</span>
 </p>
-
