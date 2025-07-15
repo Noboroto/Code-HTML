@@ -293,7 +293,6 @@
 </head>
 
 <body class="antialiased">
-	<!-- Download Buttons -->
 	<div class="download-buttons">
 		<button id="download-current"
 			class="download-btn text-white font-bold py-3 px-4 rounded-full shadow-lg flex items-center gap-2 transition-all duration-300">
@@ -307,7 +306,6 @@
 		</button>
 	</div>
 
-	<!-- Progress Modal -->
 	<div id="progress-modal" class="progress-container">
 		<div class="text-center">
 			<div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
@@ -320,7 +318,6 @@
 	</div>
 
 	<div class="container mx-auto p-2 md:p-4 lg:p-8">
-		<!-- Download Buttons - Mobile positioning -->
 		<div class="md:hidden mb-4">
 			<div class="download-buttons relative top-0 right-0 flex-row justify-center">
 				<button id="download-current-mobile"
@@ -336,7 +333,6 @@
 			</div>
 		</div>
 
-		<!-- Header -->
 		<div class="header-section text-center py-6 md:py-12 px-4 md:px-6 rounded-xl mb-4 md:mb-8">
 			<h1 class="text-2xl md:text-4xl lg:text-6xl font-black leading-tight mb-2 md:mb-4">
 				KHOA CÔNG NGHỆ THÔNG TIN
@@ -350,7 +346,6 @@
 		</div>
 
 		<div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-4 md:gap-8">
-			<!-- Menu Navigation -->
 			<div class="lg:col-span-1 md:col-span-1 order-2 md:order-1">
 				<div id="sidebar-container" class="main-container sidebar-container p-4 md:p-6 lg:sticky lg:top-4">
 					<h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6 text-center">
@@ -367,50 +362,49 @@
 
 						<div class="menu-item p-4 text-center" onclick="loadContent('pages/computer_science.html', this)">
 							<i data-lucide="cpu" class="w-8 h-8 mx-auto mb-2 icon-color-cs"></i>
-							<h3 class="font-bold text-sm">Khoa học máy tính</h3>
-							<p class="text-xs text-gray-600">KHMT</p>
+							<h3 class="font-bold text-sm">Khoa học Máy tính</h3>
+							<p class="text-xs text-gray-600">KHMT - Computer Science</p>
 						</div>
 						<div class="menu-item p-4 text-center active"
 							onclick="loadContent('pages/artificial_intelligence.html', this)">
 							<i data-lucide="brain-circuit" class="w-8 h-8 mx-auto mb-2 icon-color-ai"></i>
-							<h3 class="font-bold text-sm">Trí tuệ nhân tạo</h3>
-							<p class="text-xs text-gray-600">AI</p>
+							<h3 class="font-bold text-sm">Trí tuệ Nhân tạo</h3>
+							<p class="text-xs text-gray-600">TTNT - Artificial Intelligence</p>
 						</div>
 						<div class="menu-item p-4 text-center" onclick="loadContent('pages/computer_vision.html', this)">
 							<i data-lucide="camera" class="w-8 h-8 mx-auto mb-2 icon-color-cv"></i>
-							<h3 class="font-bold text-sm">Thị giác máy tính</h3>
-							<p class="text-xs text-gray-600">Computer Vision</p>
-						</div>
-						<div class="menu-item p-4 text-center" onclick="loadContent('pages/data_science.html', this)">
-							<i data-lucide="bar-chart-3" class="w-8 h-8 mx-auto mb-2 icon-color-ds"></i>
-							<h3 class="font-bold text-sm">Khoa học dữ liệu</h3>
-							<p class="text-xs text-gray-600">Data Science</p>
-						</div>
-						<div class="menu-item p-4 text-center" onclick="loadContent('pages/information_system.html', this)">
-							<i data-lucide="database" class="w-8 h-8 mx-auto mb-2 icon-color-is"></i>
-							<h3 class="font-bold text-sm">Hệ thống thông tin</h3>
-							<p class="text-xs text-gray-600">Information System</p>
+							<h3 class="font-bold text-sm">Thị giác Máy tính</h3>
+							<p class="text-xs text-gray-600">TGMT - Computer Vision & Cognitive Cybernetics</p>
 						</div>
 						<div class="menu-item p-4 text-center" onclick="loadContent('pages/knowledge_engineer.html', this)">
 							<i data-lucide="book-open" class="w-8 h-8 mx-auto mb-2 icon-color-ke"></i>
-							<h3 class="font-bold text-sm">Công nghệ tri thức</h3>
-							<p class="text-xs text-gray-600">Knowledge Engineering</p>
+							<h3 class="font-bold text-sm">Công nghệ Tri thức</h3>
+							<p class="text-xs text-gray-600">CNTThuc - Knowledge Engineering</p>
 						</div>
-						<div class="menu-item p-4 text-center" onclick="loadContent('pages/computer_network.html', this)">
-							<i data-lucide="network" class="w-8 h-8 mx-auto mb-2 icon-color-cn"></i>
-							<h3 class="font-bold text-sm">Mạng máy tính</h3>
-							<p class="text-xs text-gray-600">Computer Network</p>
+						<div class="menu-item p-4 text-center" onclick="loadContent('pages/data_science.html', this)">
+							<i data-lucide="bar-chart-3" class="w-8 h-8 mx-auto mb-2 icon-color-ds"></i>
+							<h3 class="font-bold text-sm">Khoa học Dữ liệu</h3>
+							<p class="text-xs text-gray-600">KHDL - Data Science</p>
 						</div>
 						<div class="menu-item p-4 text-center" onclick="loadContent('pages/software_engineer.html', this)">
 							<i data-lucide="code" class="w-8 h-8 mx-auto mb-2 icon-color-se"></i>
-							<h3 class="font-bold text-sm">Kỹ thuật phần mềm</h3>
-							<p class="text-xs text-gray-600">Software Engineering</p>
+							<h3 class="font-bold text-sm">Kỹ thuật Phần mềm</h3>
+							<p class="text-xs text-gray-600">KTPM - Software Engineering</p>
+						</div>
+						<div class="menu-item p-4 text-center" onclick="loadContent('pages/computer_network.html', this)">
+							<i data-lucide="network" class="w-8 h-8 mx-auto mb-2 icon-color-cn"></i>
+							<h3 class="font-bold text-sm">Mạng máy tính & Viễn thông</h3>
+							<p class="text-xs text-gray-600">MMT - Computer Network & Telecommunications</p>
+						</div>
+						<div class="menu-item p-4 text-center" onclick="loadContent('pages/information_system.html', this)">
+							<i data-lucide="database" class="w-8 h-8 mx-auto mb-2 icon-color-is"></i>
+							<h3 class="font-bold text-sm">Hệ thống Thông tin</h3>
+							<p class="text-xs text-gray-600">HTTT - Information System</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- Content Area -->
 			<div class="lg:col-span-3 md:col-span-2 order-1 md:order-2">
 				<div class="main-container p-2 md:p-4">
 					<iframe id="content-frame" class="content-frame w-full" src="pages/artificial_intelligence.html"
@@ -424,8 +418,14 @@
 	<script>
 		lucide.createIcons();
 
-		let currentPageUrl = 'pages/artificial_intelligence.html';
-
+		// Set initial page url and clicked menu item
+		let currentMenuItem = document.querySelector('.menu-item.active');
+		if (currentMenuItem) {
+			currentMenuItem.classList.remove('active');
+		}
+		// Default page URL
+		let currentPageUrl = 'pages/computer_science.html';
+		
 		// Function to sync iframe height with sidebar
 		function syncIframeHeight() {
 			const sidebar = document.getElementById('sidebar-container');
@@ -693,6 +693,8 @@
 		document.getElementById('content-frame').onerror = function () {
 			alert('Không thể tải trang. Vui lòng kiểm tra đường dẫn file.');
 		};
+
+		
 	</script>
 </body>
 

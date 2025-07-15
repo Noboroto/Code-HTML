@@ -12,7 +12,6 @@
 		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Poppins:wght@700;900&display=swap"
 		rel="stylesheet">
 	<script src="https://unpkg.com/lucide@latest"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 	<style>
 		body {
 			font-family: 'Be Vietnam Pro', sans-serif;
@@ -37,6 +36,12 @@
 			transition: all 0.3s ease;
 			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 			border-radius: 0.75rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.card-content {
+			flex-grow: 1;
 		}
 
 		.card:hover {
@@ -71,38 +76,21 @@
 			z-index: 10;
 		}
 
+
 		.header-content h1,
 		.header-content p {
 			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-			/* Added text shadow */
-		}
-
-		#export-btn {
-			position: fixed;
-			top: 20px;
-			right: 20px;
-			z-index: 1000;
 		}
 	</style>
 </head>
 
 <body class="antialiased">
-
-	<div id="export-btn">
-		<button id="download-btn"
-			class="bg-indigo-800 hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded-full shadow-lg flex items-center gap-2">
-			<i data-lucide="download"></i>
-			<span>Tải xuống PNG</span>
-		</button>
-	</div>
-
 	<div class="max-w-5xl mx-auto bg-white" id="infographic-content">
-
-		<!-- PHẦN 1: TIÊU ĐỀ VÀ GIỚI THIỆU -->
 		<header class="header-bg">
 			<div class="absolute inset-0" style="background-color: rgba(17, 27, 136, 0.7);"></div>
 			<div class="header-content text-center py-16 px-4">
 				<h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">KHOA HỌC MÁY TÍNH</h1>
+				<p class="text-xl md:text-2xl font-semibold text-orange-400 mb-4">Computer Science (KHMT)</p>
 				<p class="text-2xl md:text-3xl font-bold text-orange-400 mb-6">Nền Tảng Đổi Mới Công Nghệ Tương Lai</p>
 				<p class="text-lg text-gray-300">Khoa Công nghệ thông tin, Trường Đại học Khoa học tự nhiên – ĐHQG-HCM
 				</p>
@@ -111,161 +99,192 @@
 		</header>
 
 		<main class="p-4 md:p-8">
-			<!-- PHẦN 2: BẢN CHẤT NGÀNH -->
 			<section class="my-16">
 				<h2 class="section-title text-3xl text-center mb-10">Bạn Sẽ Chinh Phục Điều Gì?</h2>
-				<div class="grid md:grid-cols-3 gap-8 text-center">
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
 					<div class="card p-6">
 						<div class="flex justify-center mb-4"><i data-lucide="brain-circuit" class="icon"></i></div>
-						<h3 class="text-xl font-bold text-slate-800 mb-2">Hiểu Sâu Nguyên Lý</h3>
-						<p class="text-slate-600">Nắm vững các nguyên lý cốt lõi về giải thuật, cấu trúc dữ liệu, và lý
-							thuyết tính toán để làm nền tảng phát minh công nghệ mới.</p>
+						<div class="card-content">
+							<h3 class="text-xl font-bold text-slate-800 mb-2">Lý Thuyết Cốt Lõi</h3>
+							<p class="text-slate-600">Nắm vững các nguyên lý về giải thuật, cấu trúc dữ liệu, và lý thuyết tính toán -
+								những viên gạch nền tảng để bạn không chỉ "code", mà còn "sáng tạo" ra công nghệ mới.</p>
+						</div>
 					</div>
 					<div class="card p-6">
 						<div class="flex justify-center mb-4"><i data-lucide="atom" class="icon"></i></div>
-						<h3 class="text-xl font-bold text-slate-800 mb-2">Xây Dựng Công Nghệ</h3>
-						<p class="text-slate-600">Nghiên cứu và phát triển các lĩnh vực nền tảng như Trí tuệ nhân tạo,
-							Học máy, Khoa học dữ liệu, An toàn thông tin, và Robotics.</p>
+						<div class="card-content">
+							<h3 class="text-xl font-bold text-slate-800 mb-2">Xây Dựng Hệ Thống</h3>
+							<p class="text-slate-600">Học cách thiết kế và phát triển các hệ thống phức tạp như hệ điều hành, trình
+								biên dịch, và mạng máy tính - bộ "xương sống" cho mọi phần mềm vận hành.</p>
+						</div>
 					</div>
 					<div class="card p-6">
 						<div class="flex justify-center mb-4"><i data-lucide="lightbulb" class="icon"></i></div>
-						<h3 class="text-xl font-bold text-slate-800 mb-2">Năng Lực Đổi Mới</h3>
-						<p class="text-slate-600">Sáng tạo thuật toán, giải quyết các bài toán khoa học và công nghiệp
-							phức tạp, đóng góp cho sự phát triển của công nghệ toàn cầu.</p>
+						<div class="card-content">
+							<h3 class="text-xl font-bold text-slate-800 mb-2">Tư Duy Giải Quyết Vấn Đề</h3>
+							<p class="text-slate-600">Rèn luyện khả năng phân tích một vấn đề phức tạp, "chẻ" nó thành các bài toán
+								nhỏ hơn và thiết kế ra giải pháp thuật toán hiệu quả nhất để xử lý.</p>
+						</div>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="infinity" class="icon"></i></div>
+						<div class="card-content">
+							<h3 class="text-xl font-bold text-slate-800 mb-2">Nền Tảng Cho Tương Lai</h3>
+							<p class="text-slate-600">Trang bị kiến thức nền tảng vững chắc về AI, Bảo mật, Đồ họa máy tính... để bạn
+								có thể đi sâu vào bất kỳ lĩnh vực chuyên sâu nào trong thế giới công nghệ.</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- PHẦN 3: SỰ KHÁC BIỆT -->
 			<section class="my-16">
-				<h2 class="section-title text-3xl text-center mb-10">Sự Khác Biệt Của Khoa Học Máy Tính</h2>
-				<div class="grid md:grid-cols-2 gap-8">
-					<div class="space-y-6">
-						<div class="card flex items-center p-6">
-							<i data-lucide="layers" class="icon mr-6 flex-shrink-0"></i>
-							<div>
-								<h3 class="text-xl font-bold text-slate-800">Không Chỉ Lập Trình</h3>
-								<p class="text-slate-600">Tập trung vào việc "tại sao" và "như thế nào" đằng sau mỗi
-									công nghệ, thay vì chỉ học cách sử dụng chúng.</p>
-							</div>
+				<h2 class="section-title text-3xl text-center mb-10">Sự Khác Biệt Của Ngành</h2>
+				<div class="space-y-12">
+					<!-- Feature 1 -->
+					<div class="grid md:grid-cols-2 gap-8 items-center">
+						<div class="card overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1534665482403-a909d0d97c67?q=80&w=2070&auto=format&fit=crop"
+								alt="Mã nguồn trên màn hình máy tính" class="object-cover w-full h-full rounded-lg">
 						</div>
-						<div class="card flex items-center p-6">
-							<i data-lucide="function-square" class="icon mr-6 flex-shrink-0"></i>
-							<div>
-								<h3 class="text-xl font-bold text-slate-800">Tư Duy Từ Gốc Rễ</h3>
-								<p class="text-slate-600">Trang bị tư duy lý thuyết để bạn không chỉ sử dụng công nghệ,
-									mà còn có thể tạo ra và cải tiến chúng từ những nguyên lý cơ bản nhất.</p>
+						<div class="card p-6">
+							<div class="flex items-center mb-4">
+								<i data-lucide="layers" class="icon mr-4"></i>
+								<h4 class="text-xl font-bold text-slate-800">Tập trung vào "Tại sao?"</h4>
 							</div>
-						</div>
-						<div class="card flex items-center p-6">
-							<i data-lucide="git-fork" class="icon mr-6 flex-shrink-0"></i>
-							<div>
-								<h3 class="text-xl font-bold text-slate-800">Ngành Học Nền Tảng</h3>
-								<p class="text-slate-600">Là gốc rễ cho các chuyên ngành như AI, Khoa học dữ liệu, An
-									toàn thông tin, Kỹ thuật phần mềm,...</p>
-							</div>
-						</div>
-						<div class="card flex items-center p-6">
-							<i data-lucide="link-2" class="icon mr-6 flex-shrink-0"></i>
-							<div>
-								<h3 class="text-xl font-bold text-slate-800">Cầu Nối Giữa Toán Học & Kỹ Thuật</h3>
-								<p class="text-slate-600">Kết hợp tư duy logic, trừu tượng của toán học với khả năng
-									giải quyết vấn đề thực tiễn của kỹ thuật.</p>
-							</div>
+							<p class="text-slate-600">Thay vì chỉ học cách sử dụng công nghệ, KHMT đào sâu vào bản chất: Tại sao thuật
+								toán này nhanh? Hệ điều hành quản lý bộ nhớ như thế nào? Bạn học để tạo ra công cụ, không chỉ dùng công
+								cụ.</p>
 						</div>
 					</div>
-					<div class="card overflow-hidden">
-						<img src="../imgs/cs-image.png" alt="Hình ảnh minh họa khoa học máy tính" class="object-cover w-full h-full"
-							onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFFFFF/000000?text=CS+Image';">
+					<!-- Feature 2 -->
+					<div class="grid md:grid-cols-2 gap-8 items-center">
+						<div class="card p-6 md:order-last">
+							<div class="flex items-center mb-4">
+								<i data-lucide="function-square" class="icon mr-4"></i>
+								<h4 class="text-xl font-bold text-slate-800">Tư duy từ gốc rễ</h4>
+							</div>
+							<p class="text-slate-600">Rèn luyện tư duy trừu tượng và logic toán học để biến một vấn đề thực tế thành
+								mô hình tính toán và giải quyết nó một cách tối ưu, hiệu quả nhất.</p>
+						</div>
+						<div class="card overflow-hidden">
+							<img src="../imgs/cs_formular.png"
+								alt="Công thức toán học trên bảng kính" class="object-cover w-full h-full rounded-lg">
+						</div>
+					</div>
+					<!-- Feature 3 -->
+					<div class="grid md:grid-cols-2 gap-8 items-center">
+						<div class="card overflow-hidden">
+							<img src="../imgs/knowledge_tree.jpg"
+								alt="Cây cổ thụ với bộ rễ vững chắc" class="object-cover w-full h-full rounded-lg">
+						</div>
+						<div class="card p-6">
+							<div class="flex items-center mb-4">
+								<i data-lucide="git-fork" class="icon mr-4"></i>
+								<h4 class="text-xl font-bold text-slate-800">Ngành học nền tảng</h4>
+							</div>
+							<p class="text-slate-600">Là gốc rễ cho các chuyên ngành hot như AI, Khoa học dữ liệu, An toàn thông tin.
+								Có gốc vững thì cành lá mới xum xuê và bạn có thể dễ dàng chuyển hướng trong tương lai.</p>
+						</div>
+					</div>
+					<!-- Feature 4 -->
+					<div class="grid md:grid-cols-2 gap-8 items-center">
+						<div class="card p-6 md:order-last">
+							<div class="flex items-center mb-4">
+								<i data-lucide="flask-conical" class="icon mr-4"></i>
+								<h4 class="text-xl font-bold text-slate-800">Thiên hướng Nghiên cứu</h4>
+							</div>
+							<p class="text-slate-600">Cung cấp nền tảng vững chắc nhất cho những ai muốn theo đuổi con đường học
+								thuật, nghiên cứu chuyên sâu hoặc làm việc tại các phòng R&D của tập đoàn công nghệ lớn.</p>
+						</div>
+						<div class="card overflow-hidden">
+							<img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=2070&auto=format&fit=crop"
+								alt="Nhóm người đang thảo luận trên bảng trắng" class="object-cover w-full h-full rounded-lg">
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- NEW SECTION: SO SÁNH CHUYÊN NGÀNH -->
 			<section class="my-16">
-				<h2 class="section-title text-3xl text-center mb-10">Khoa Học Máy Tính So Với Các Chuyên Ngành Khác</h2>
+				<h2 class="section-title text-3xl text-center mb-10">KHMT "So Kè" Với Các Ngành Hot Khác</h2>
 				<div class="grid md:grid-cols-2 gap-8">
 					<div class="card p-6">
 						<div class="flex items-center mb-4">
 							<i data-lucide="brain-circuit" class="icon mr-4"></i>
-							<h4 class="text-xl font-bold text-slate-800">vs. Trí tuệ nhân tạo</h4>
+							<h4 class="text-xl font-bold text-slate-800">vs. Trí tuệ nhân tạo (AI)</h4>
 						</div>
-						<p class="text-slate-600">KHMT xây dựng các thuật toán và cấu trúc dữ liệu nền tảng. AI sử dụng
-							các nền tảng đó để tạo ra các hệ thống có khả năng học hỏi và "tư duy".</p>
-					</div>
-					<div class="card p-6">
-						<div class="flex items-center mb-4">
-							<i data-lucide="book-open-check" class="icon mr-4"></i>
-							<h4 class="text-xl font-bold text-slate-800">vs. Công nghệ Tri thức</h4>
-						</div>
-						<p class="text-slate-600">KHMT tập trung vào việc xử lý thông tin hiệu quả. CNTThuc tập trung
-							vào việc biểu diễn tri thức và suy luận logic, giúp máy tính "hiểu" được ngữ nghĩa.</p>
+						<p class="text-slate-600">KHMT xây dựng "động cơ" và "khung sườn" (thuật toán, hệ điều hành). AI là người
+							chế tạo "bộ não thông minh" để lắp vào chiếc xe, giúp nó có khả năng tự học và đưa ra quyết định.</p>
 					</div>
 					<div class="card p-6">
 						<div class="flex items-center mb-4">
 							<i data-lucide="camera" class="icon mr-4"></i>
-							<h4 class="text-xl font-bold text-slate-800">vs. Thị giác Máy tính</h4>
+							<h4 class="text-xl font-bold text-slate-800">vs. Thị giác Máy tính (TGMT)</h4>
 						</div>
-						<p class="text-slate-600">KHMT cung cấp các thuật toán xử lý tín hiệu. Thị giác Máy tính áp dụng
-							chúng để giải quyết các bài toán chuyên sâu về hình ảnh và video.</p>
+						<p class="text-slate-600">KHMT cung cấp các thuật toán xử lý tín hiệu và học máy chung. TGMT là một ứng dụng
+							chuyên sâu, áp dụng và cải tiến các thuật toán đó để giải quyết các bài toán riêng về hình ảnh, dạy cho
+							máy tính cách "nhìn".</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex items-center mb-4">
+							<i data-lucide="book-open-check" class="icon mr-4"></i>
+							<h4 class="text-xl font-bold text-slate-800">vs. Công nghệ Tri thức (CNTThuc)</h4>
+						</div>
+						<p class="text-slate-600">KHMT tập trung vào việc xử lý thông tin hiệu quả (làm sao để máy chạy nhanh).
+							CNTThuc tập trung vào việc biểu diễn tri thức và suy luận logic, giúp máy tính "hiểu" được ngữ nghĩa.</p>
 					</div>
 					<div class="card p-6">
 						<div class="flex items-center mb-4">
 							<i data-lucide="database-zap" class="icon mr-4"></i>
-							<h4 class="text-xl font-bold text-slate-800">vs. Khoa học Dữ liệu</h4>
+							<h4 class="text-xl font-bold text-slate-800">vs. Khoa học Dữ liệu (KHDL)</h4>
 						</div>
-						<p class="text-slate-600">KHMT tạo ra công cụ lưu trữ và xử lý dữ liệu. KHDL sử dụng các công cụ
-							đó để phân tích, tìm ra quy luật và "kể chuyện" từ dữ liệu.</p>
+						<p class="text-slate-600">KHMT tạo ra các "công cụ" như cơ sở dữ liệu và thuật toán học máy. KHDL là người
+							"nghệ nhân", sử dụng các công cụ đó để "kể những câu chuyện" ý nghĩa từ dữ liệu.</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- PHẦN 4: GIẢI MÃ CÁC VỊ TRÍ NGHỀ NGHIỆP -->
 			<section class="my-16">
 				<h2 class="section-title text-3xl text-center mb-12">Giải Mã Các Vị Trí Nghề Nghiệp</h2>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<div class="card p-6 flex flex-col items-center text-center">
 						<i data-lucide="flask-conical" class="icon mb-4"></i>
 						<h4 class="text-lg font-bold text-slate-800 mb-2">Nhà nghiên cứu AI/ML</h4>
-						<p class="text-slate-600 text-sm">Phát minh các mô hình, thuật toán Trí tuệ nhân tạo mới để giải
-							quyết các bài toán chưa có lời giải.</p>
-					</div>
-					<div class="card p-6 flex flex-col items-center text-center">
-						<i data-lucide="database-zap" class="icon mb-4"></i>
-						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Khoa học dữ liệu</h4>
-						<p class="text-slate-600 text-sm">"Khai quật" tri thức từ dữ liệu lớn, xây dựng các hệ thống dự
-							báo, phân tích hành vi người dùng.</p>
-					</div>
-					<div class="card p-6 flex flex-col items-center text-center">
-						<i data-lucide="shield-check" class="icon mb-4"></i>
-						<h4 class="text-lg font-bold text-slate-800 mb-2">Chuyên gia bảo mật</h4>
-						<p class="text-slate-600 text-sm">Thiết kế hệ thống mật mã, phân tích an toàn thuật toán và
-							chứng
-							minh tính đúng đắn của giao thức bảo mật.</p>
+						<p class="text-slate-600 text-sm">Phát minh các mô hình, thuật toán Trí tuệ nhân tạo mới để giải quyết các
+							bài toán chưa có lời giải.</p>
 					</div>
 					<div class="card p-6 flex flex-col items-center text-center">
 						<i data-lucide="workflow" class="icon mb-4"></i>
-						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư thuật toán / Tối ưu hóa</h4>
-						<p class="text-slate-600 text-sm">Thiết kế và cải tiến các thuật toán cốt lõi giúp phần mềm chạy
-							nhanh hơn, hiệu quả hơn trên quy mô lớn.</p>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Thuật toán</h4>
+						<p class="text-slate-600 text-sm">Làm việc tại các công ty lớn (Google, Meta) để thiết kế và tối ưu các
+							thuật toán cốt lõi giúp sản phẩm chạy nhanh hơn, hiệu quả hơn trên quy mô tỷ người dùng.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="shield-check" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Chuyên gia Mật mã học</h4>
+						<p class="text-slate-600 text-sm">Thiết kế các hệ thống mã hóa và giao thức bảo mật thế hệ mới, đảm bảo an
+							toàn cho thế giới số.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="cpu" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Hệ thống/Trình biên dịch</h4>
+						<p class="text-slate-600 text-sm">Làm việc ở tầng sâu nhất của hệ thống, phát triển hệ điều hành, trình biên
+							dịch cho các ngôn ngữ lập trình mới.</p>
 					</div>
 					<div class="card p-6 flex flex-col items-center text-center">
 						<i data-lucide="package-check" class="icon mb-4"></i>
 						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư R&D</h4>
-						<p class="text-slate-600 text-sm">Biến các ý tưởng nghiên cứu thành sản phẩm, công nghệ đột phá,
+						<p class="text-slate-600 text-sm">Biến các ý tưởng nghiên cứu khoa học thành sản phẩm, công nghệ đột phá,
 							tạo ra lợi thế cạnh tranh cho doanh nghiệp.</p>
 					</div>
 					<div class="card p-6 flex flex-col items-center text-center">
 						<i data-lucide="graduation-cap" class="icon mb-4"></i>
 						<h4 class="text-lg font-bold text-slate-800 mb-2">Con đường học thuật</h4>
-						<p class="text-slate-600 text-sm">Trở thành giảng viên, nhà khoa học tại các trường đại học,
-							tiếp
-							tục nghiên cứu chuyên sâu và đào tạo thế hệ tương lai.</p>
+						<p class="text-slate-600 text-sm">Trở thành giảng viên, nhà khoa học tại các trường đại học, viện nghiên
+							cứu, tiếp tục nghiên cứu chuyên sâu và đào tạo thế hệ tương lai.</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- NEW SECTION: ỨNG DỤNG THỰC TẾ -->
 			<section class="my-16">
 				<h2 class="section-title text-3xl text-center mb-12">Ứng Dụng Thực Tế</h2>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -294,11 +313,11 @@
 						</div>
 					</div>
 					<div class="card p-6 flex items-start">
-						<i data-lucide="cpu" class="icon mr-4 flex-shrink-0"></i>
+						<i data-lucide="binary" class="icon mr-4 flex-shrink-0"></i>
 						<div>
 							<h4 class="text-lg font-bold text-slate-800 mb-2">Trình biên dịch (Compilers)</h4>
-							<p class="text-slate-600 text-sm">Công nghệ lõi giúp chuyển đổi mã nguồn từ ngôn ngữ lập trình con người
-								đọc được sang ngôn ngữ máy, là nền tảng cho mọi phần mềm.</p>
+							<p class="text-slate-600 text-sm">Công nghệ lõi giúp chuyển đổi mã nguồn (Python, Java) sang ngôn ngữ máy,
+								là nền tảng cho mọi phần mềm.</p>
 						</div>
 					</div>
 					<div class="card p-6 flex items-start">
@@ -319,42 +338,11 @@
 					</div>
 				</div>
 			</section>
-
 		</main>
 	</div>
 
 	<script>
 		lucide.createIcons();
-
-		// Export to PNG logic
-		const downloadBtn = document.getElementById('download-btn');
-		const exportBtnContainer = document.getElementById('export-btn');
-		const contentToExport = document.getElementById('infographic-content');
-
-		downloadBtn.addEventListener('click', () => {
-			// Hide the button before taking the screenshot
-			exportBtnContainer.style.display = 'none';
-
-			html2canvas(contentToExport, {
-				backgroundColor: '#F0F8FF', // Match the new body background
-				useCORS: true, // For external images
-				scale: 2 // Increase resolution for better quality
-			}).then(canvas => {
-				const image = canvas.toDataURL('image/png', 1.0);
-				const link = document.createElement('a');
-				link.download = 'infographic-khmt-hcmus.png';
-				link.href = image;
-				link.click();
-
-				// Show the button again after the screenshot is taken
-				exportBtnContainer.style.display = 'block';
-			}).catch(err => {
-				console.error('Oops, something went wrong!', err);
-				// Ensure the button is shown again even if there's an error
-				exportBtnContainer.style.display = 'block';
-			});
-		});
-
 	</script>
 </body>
 
