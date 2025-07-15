@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infographic: Kỹ Thuật Phần Mềm – Từ Ý Tưởng Đến Kiệt Tác Số</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Poppins:wght@700;900&display=swap"
+		rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+	<style>
+		body {
+			font-family: 'Be Vietnam Pro', sans-serif;
+			background-color: #EFF6FF;
+			/* Blue-50 */
+			color: #1E3A8A;
+			/* Blue-900 */
+		}
+
+		.section-title {
+			font-weight: 900;
+			color: #1D4ED8;
+			/* Blue-700 */
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.card {
+			background-color: #FFFFFF;
+			border: 1px solid #DBEAFE;
+			/* Blue-200 */
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+			border-radius: 0.75rem;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			border-color: #2563EB;
+			/* Blue-600 */
+			box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		}
+
+		.icon {
+			color: #2563EB;
+			width: 48px;
+			height: 48px;
+		}
+
+		.tagline {
+			font-style: italic;
+			color: #FBBF24;
+			/* Amber-400 */
+			font-weight: 500;
+		}
+
+		.cta-section {
+			background: linear-gradient(45deg, #1E40AF, #3B82F6);
+			/* Blue-800 to Blue-500 */
+		}
+
+		.header-bg {
+			background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop');
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+
+		.header-bg::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(30, 64, 175, 0.8);
+			/* Blue-800 with opacity */
+		}
+
+		.header-content {
+			position: relative;
+			z-index: 10;
+		}
+
+		.header-content h1,
+		.header-content p {
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		#export-btn {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+		}
+	</style>
+</head>
+
+<body class="antialiased">
+
+	<div id="export-btn">
+		<button id="download-btn"
+			class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg flex items-center gap-2">
+			<i data-lucide="download"></i>
+			<span>Tải xuống PNG</span>
+		</button>
+	</div>
+
+	<div class="max-w-5xl mx-auto bg-white" id="infographic-content">
+
+		<!-- PHẦN 1: TIÊU ĐỀ VÀ GIỚI THIỆU -->
+		<header class="header-bg">
+			<div class="header-content text-center py-16 px-4">
+				<h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">KỸ THUẬT PHẦN MỀM</h1>
+				<p class="text-2xl md:text-3xl font-bold text-amber-300 mb-6">Từ Ý Tưởng Đến Kiệt Tác Số</p>
+				<p class="text-lg text-gray-200">Khoa Công nghệ thông tin, Trường Đại học Khoa học tự nhiên – ĐHQG-HCM
+				</p>
+				<p class="tagline text-xl mt-4">"Tiên phong tri thức, kiến tạo tương lai"</p>
+			</div>
+		</header>
+
+		<main class="p-4 md:p-8">
+			<!-- PHẦN 2: BẢN CHẤT NGÀNH -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-10">Bạn Sẽ Chinh Phục Điều Gì?</h2>
+				<div class="grid md:grid-cols-3 gap-8 text-center">
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="clipboard-check" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Quy Trình Chuyên Nghiệp</h3>
+						<p class="text-slate-600">Nắm vững các mô hình phát triển phần mềm hiện đại (Agile, Scrum,
+							DevOps) để xây dựng sản phẩm một cách hiệu quả.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="blocks" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Kiến Trúc Hệ Thống Lớn</h3>
+						<p class="text-slate-600">Học cách thiết kế và xây dựng các hệ thống phần mềm phức tạp, có khả
+							năng mở rộng và chịu tải cao.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="shield-check" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Đảm Bảo Chất Lượng</h3>
+						<p class="text-slate-600">Trang bị kỹ năng kiểm thử, gỡ lỗi và bảo trì để đảm bảo phần mềm hoạt
+							động ổn định và đáng tin cậy.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- PHẦN 3: SỰ KHÁC BIỆT -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-10">Sự Khác Biệt Của Kỹ Thuật Phần Mềm</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="space-y-6">
+						<div class="card flex items-center p-6">
+							<i data-lucide="hammer" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Tập Trung Vào Xây Dựng</h3>
+								<p class="text-slate-600">Tập trung vào quy trình, công cụ và kỹ thuật để tạo ra sản
+									phẩm phần mềm hoàn chỉnh và chất lượng.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="users" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Làm Việc Nhóm & Quy Trình</h3>
+								<p class="text-slate-600">Nhấn mạnh kỹ năng làm việc nhóm, giao tiếp và tuân thủ các quy
+									trình chuẩn trong ngành công nghiệp.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="arrow-right-left" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Từ Ý Tưởng Đến Sản Phẩm</h3>
+								<p class="text-slate-600">Là cầu nối trực tiếp biến ý tưởng, yêu cầu của khách hàng
+									thành những sản phẩm phần mềm hữu ích.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="recycle" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Vòng Đời Sản Phẩm</h3>
+								<p class="text-slate-600">Quan tâm đến toàn bộ vòng đời của phần mềm, từ lúc lên kế
+									hoạch, phát triển, triển khai cho đến khi bảo trì và nâng cấp.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card overflow-hidden">
+						<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+							alt="Hình ảnh minh họa làm việc nhóm" class="object-cover w-full h-full">
+					</div>
+				</div>
+			</section>
+
+			<!-- PHẦN 4: GIẢI MÃ CÁC VỊ TRÍ NGHỀ NGHIỆP -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-12">Giải Mã Các Vị Trí Nghề Nghiệp</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="code" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Phần mềm</h4>
+						<p class="text-slate-600 text-sm">Trực tiếp viết mã, xây dựng và phát triển các tính năng cho
+							sản phẩm phần mềm (Frontend, Backend, Full-stack).</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="cloud-cog" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư DevOps</h4>
+						<p class="text-slate-600 text-sm">Tự động hóa quy trình phát triển, triển khai và vận hành hệ
+							thống phần mềm trên các nền tảng đám mây.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="bug" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Đảm bảo Chất lượng</h4>
+						<p class="text-slate-600 text-sm">Chịu trách nhiệm kiểm thử, tìm lỗi và đảm bảo phần mềm đạt
+							chất lượng cao nhất trước khi đến tay người dùng.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="clipboard-list" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Quản lý Dự án</h4>
+						<p class="text-slate-600 text-sm">Lên kế hoạch, điều phối nhân sự, quản lý tiến độ và ngân sách
+							để đảm bảo dự án phần mềm thành công.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="network" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kiến trúc sư Phần mềm</h4>
+						<p class="text-slate-600 text-sm">Thiết kế "bộ xương" cho các hệ thống phần mềm phức tạp, đưa ra
+							các quyết định công nghệ quan trọng.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="user-round-search" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Chuyên viên Phân tích Nghiệp vụ</h4>
+						<p class="text-slate-600 text-sm">Là cầu nối giữa khách hàng và đội ngũ phát triển, phân tích
+							yêu cầu để xây dựng đúng sản phẩm người dùng cần.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- NEW SECTION: SẢN PHẨM & ỨNG DỤNG -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-12">Sản Phẩm Của Kỹ Thuật Phần Mềm</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="card p-6 flex items-start">
+						<i data-lucide="smartphone" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Ứng dụng di động</h4>
+							<p class="text-slate-600 text-sm">Các ứng dụng bạn sử dụng hàng ngày như Grab, Momo, TikTok,
+								Zalo.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="shopping-cart" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Nền tảng Thương mại điện tử</h4>
+							<p class="text-slate-600 text-sm">Các hệ thống mua sắm trực tuyến phức tạp như Tiki, Shopee,
+								Lazada.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="landmark" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Hệ thống Ngân hàng & Tài chính</h4>
+							<p class="text-slate-600 text-sm">Các phần mềm giao dịch, quản lý tài khoản an toàn và bảo
+								mật cho ngân hàng.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="cloud" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Dịch vụ Đám mây</h4>
+							<p class="text-slate-600 text-sm">Các nền tảng toàn cầu như Google Drive, Dropbox, và các
+								dịch vụ của AWS, Azure.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="building-2" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Phần mềm Doanh nghiệp</h4>
+							<p class="text-slate-600 text-sm">Các hệ thống quản lý nguồn lực (ERP), quản lý nhân sự, kế
+								toán cho các tập đoàn.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="gamepad-2" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Game & Giải trí</h4>
+							<p class="text-slate-600 text-sm">Xây dựng engine, logic và các hệ thống phức tạp cho các
+								trò chơi điện tử.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
+
+	<script>
+		lucide.createIcons();
+
+		// Export to PNG logic
+		const downloadBtn = document.getElementById('download-btn');
+		const exportBtnContainer = document.getElementById('export-btn');
+		const contentToExport = document.getElementById('infographic-content');
+
+		downloadBtn.addEventListener('click', () => {
+			// Hide the button before taking the screenshot
+			exportBtnContainer.style.display = 'none';
+
+			html2canvas(contentToExport, {
+				backgroundColor: '#EFF6FF', // Match the new body background
+				useCORS: true, // For external images
+				scale: 2 // Increase resolution for better quality
+			}).then(canvas => {
+				const image = canvas.toDataURL('image/png', 1.0);
+				const link = document.createElement('a');
+				link.download = 'infographic-ktpm-hcmus.png';
+				link.href = image;
+				link.click();
+
+				// Show the button again after the screenshot is taken
+				exportBtnContainer.style.display = 'block';
+			}).catch(err => {
+				console.error('Oops, something went wrong!', err);
+				// Ensure the button is shown again even if there's an error
+				exportBtnContainer.style.display = 'block';
+			});
+		});
+
+	</script>
+</body>
+
+</html>

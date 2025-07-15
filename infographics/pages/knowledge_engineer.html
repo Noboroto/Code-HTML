@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infographic: Công Nghệ Tri Thức – Trao Cho Máy Năng Lực "Hiểu"</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Poppins:wght@700;900&display=swap"
+		rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+	<style>
+		body {
+			font-family: 'Be Vietnam Pro', sans-serif;
+			background-color: #FFFBEB;
+			/* Amber-50 */
+			color: #422006;
+			/* Amber-950 */
+		}
+
+		.section-title {
+			font-weight: 900;
+			color: #B45309;
+			/* Amber-700 */
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.card {
+			background-color: #FFFFFF;
+			border: 1px solid #FEF3C7;
+			/* Amber-200 */
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+			border-radius: 0.75rem;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			border-color: #D97706;
+			/* Amber-600 */
+			box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		}
+
+		.icon {
+			color: #D97706;
+			width: 48px;
+			height: 48px;
+		}
+
+		.tagline {
+			font-style: italic;
+			color: #65A30D;
+			/* Lime-500 */
+			font-weight: 500;
+		}
+
+		.cta-section {
+			background: linear-gradient(45deg, #78350F, #B45309);
+			/* Amber-900 to Amber-700 */
+		}
+
+		.header-bg {
+			background-image: url('https://images.unsplash.com/photo-1583324113626-4e356445557c?q=80&w=1974&auto=format&fit=crop');
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+
+		.header-bg::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(120, 53, 15, 0.8);
+			/* Amber-900 with opacity */
+		}
+
+		.header-content {
+			position: relative;
+			z-index: 10;
+		}
+
+		.header-content h1,
+		.header-content p {
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		#export-btn {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+		}
+
+		.special-title-font {
+			font-family: 'Poppins', 'Be Vietnam Pro', sans-serif;
+		}
+
+		.fit-hcmus-branding {
+			text-transform: lowercase;
+			color: #111B88;
+			font-family: 'Poppins', 'Be Vietnam Pro', sans-serif;
+			font-weight: 900;
+		}
+	</style>
+</head>
+
+<body class="antialiased">
+
+	<div id="export-btn">
+		<button id="download-btn"
+			class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-full shadow-lg flex items-center gap-2">
+			<i data-lucide="download"></i>
+			<span>Tải xuống PNG</span>
+		</button>
+	</div>
+
+	<div class="max-w-5xl mx-auto bg-white" id="infographic-content">
+
+		<!-- PHẦN 1: TIÊU ĐỀ VÀ GIỚI THIỆU -->
+		<header class="header-bg">
+			<div class="header-content text-center py-16 px-4">
+				<h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">CÔNG NGHỆ TRI THỨC</h1>
+				<p class="text-2xl md:text-3xl font-bold text-amber-300 mb-6">Trao Cho Máy Năng Lực "Hiểu" & "Suy Luận"
+				</p>
+				<p class="text-lg text-gray-200">Khoa Công nghệ thông tin, Trường Đại học Khoa học tự nhiên – ĐHQG-HCM
+				</p>
+				<p class="text-lg text-gray-300 mt-4">"Tiên phong tri thức, kiến tạo tương lai"</p>
+			</div>
+		</header>
+
+		<main class="p-4 md:p-8">
+			<!-- PHẦN 2: BẢN CHẤT NGÀNH -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-10">Bạn Sẽ Chinh Phục Điều Gì?</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="brain" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Biểu Diễn Tri Thức</h3>
+						<p class="text-slate-600">Học cách cấu trúc hóa thông tin và tri thức của con người để máy tính
+							có thể hiểu và xử lý được.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="message-circle-question" class="icon"></i>
+						</div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Xử Lý Ngôn Ngữ Tự Nhiên</h3>
+						<p class="text-slate-600">Nghiên cứu các phương pháp giúp máy tính đọc, hiểu, và tạo ra ngôn ngữ
+							của con người một cách tự nhiên.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="puzzle" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Hệ Suy Diễn & Logic</h3>
+						<p class="text-slate-600">Xây dựng các hệ thống có khả năng suy luận logic, đưa ra kết luận và
+							giải quyết vấn đề như một chuyên gia.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="search-check" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Khai Phá Dữ Liệu Web</h3>
+						<p class="text-slate-600">Làm chủ các kỹ thuật khai thác và trích xuất thông tin, tri thức từ
+							nguồn dữ liệu khổng lồ trên Internet.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- PHẦN 3: SỰ KHÁC BIỆT -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-10">Sự Khác Biệt Của Công Nghệ Tri Thức</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="space-y-6">
+						<div class="card flex items-center p-6">
+							<i data-lucide="captions" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Tập Trung Vào "Ngữ Nghĩa"</h3>
+								<p class="text-slate-600">Không chỉ xử lý dữ liệu thô, ngành học đi sâu vào việc tìm
+									hiểu ý nghĩa và mối quan hệ đằng sau dữ liệu.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="lightbulb-off" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Giải Quyết Vấn Đề Mơ Hồ</h3>
+								<p class="text-slate-600">Trang bị các công cụ để xử lý các bài toán không có câu trả
+									lời rõ ràng, đòi hỏi sự suy luận và kiến thức chuyên gia.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="languages" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Cầu Nối Giữa Người & Máy</h3>
+								<p class="text-slate-600">Là chìa khóa để xây dựng các hệ thống thông minh có thể tương
+									tác và giao tiếp với con người một cách tự nhiên nhất.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="library" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Xây Dựng "Bộ Não" Cho Hệ Thống</h3>
+								<p class="text-slate-600">Tập trung vào việc xây dựng các "bộ não" tri thức (knowledge
+									base) làm nền tảng cho các ứng dụng AI thông minh.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card overflow-hidden">
+						<img src="https://images.unsplash.com/photo-1507146426996-32f2e2b3dfb4?q=80&w=2070&auto=format&fit=crop"
+							alt="Hình ảnh minh họa tri thức và dữ liệu" class="object-cover w-full h-full">
+					</div>
+				</div>
+			</section>
+
+			<!-- PHẦN 4: GIẢI MÃ CÁC VỊ TRÍ NGHỀ NGHIỆP -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-12">Giải Mã Các Vị Trí Nghề Nghiệp</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="user-cog" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Tri thức</h4>
+						<p class="text-slate-600 text-sm">Thiết kế, xây dựng và duy trì các hệ cơ sở tri thức, giúp các
+							hệ thống AI có khả năng suy luận và học hỏi.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="message-square-text" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Chuyên gia Xử lý Ngôn ngữ Tự nhiên</h4>
+						<p class="text-slate-600 text-sm">Phát triển các mô hình giúp máy tính hiểu, phân tích, và tạo
+							ra ngôn ngữ của con người (dịch máy, chatbot).</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="bot" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư AI Hội thoại</h4>
+						<p class="text-slate-600 text-sm">Xây dựng các trợ lý ảo và chatbot thông minh, có khả năng giao
+							tiếp và hỗ trợ người dùng một cách tự nhiên.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="search" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Công cụ Tìm kiếm</h4>
+						<p class="text-slate-600 text-sm">Cải tiến các thuật toán tìm kiếm để hiểu rõ hơn ý định của
+							người dùng và trả về kết quả chính xác, phù hợp.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="shield-check" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Chuyên gia An toàn Thông tin</h4>
+						<p class="text-slate-600 text-sm">Nghiên cứu và áp dụng các kỹ thuật mã hóa, giấu tin và các
+							giải pháp đảm bảo an toàn, bí mật cho thông tin.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="share-2" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Web Ngữ nghĩa</h4>
+						<p class="text-slate-600 text-sm">Xây dựng các hệ thống web thông minh hơn, nơi dữ liệu có thể
+							được máy tính hiểu và liên kết với nhau.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- NEW SECTION: ỨNG DỤNG THỰC TẾ -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-12">Ứng Dụng Thực Tế Của Công Nghệ Tri Thức</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="card p-6 flex items-start">
+						<i data-lucide="search-slash" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Tìm kiếm Ngữ nghĩa</h4>
+							<p class="text-slate-600 text-sm">Thay vì tìm kiếm theo từ khóa, các công cụ này hiểu ý định
+								và ngữ cảnh của bạn để trả về kết quả chính xác hơn.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="book-check" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Hệ chuyên gia</h4>
+							<p class="text-slate-600 text-sm">Các hệ thống mô phỏng khả năng ra quyết định của một
+								chuyên gia trong một lĩnh vực cụ thể, như chẩn đoán y khoa hoặc tư vấn tài chính.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="languages" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Dịch máy tự động</h4>
+							<p class="text-slate-600 text-sm">Các dịch vụ như Google Translate sử dụng các mô hình ngôn
+								ngữ phức tạp để dịch văn bản giữa các ngôn ngữ một cách tự nhiên.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="message-square-plus" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Tóm tắt văn bản</h4>
+							<p class="text-slate-600 text-sm">Các công cụ tự động đọc và rút ra những ý chính từ các tài
+								liệu dài, giúp tiết kiệm thời gian nghiên cứu và đọc hiểu.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="thumbs-up" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Phân tích cảm xúc</h4>
+							<p class="text-slate-600 text-sm">Tự động xác định thái độ (tích cực, tiêu cực, trung lập)
+								của khách hàng từ các bình luận, đánh giá trên mạng xã hội.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="lock-keyhole" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">An toàn thông tin</h4>
+							<p class="text-slate-600 text-sm">Áp dụng các mô hình tri thức để phát hiện và phân tích các
+								mối đe dọa an ninh mạng, xây dựng hệ thống phòng thủ thông minh.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script>
+		lucide.createIcons();
+
+		// Export to PNG logic
+		const downloadBtn = document.getElementById('download-btn');
+		const exportBtnContainer = document.getElementById('export-btn');
+		const contentToExport = document.getElementById('infographic-content');
+
+		downloadBtn.addEventListener('click', () => {
+			// Hide the button before taking the screenshot
+			exportBtnContainer.style.display = 'none';
+
+			html2canvas(contentToExport, {
+				backgroundColor: '#FFFBEB', // Match the new body background
+				useCORS: true, // For external images
+				scale: 2 // Increase resolution for better quality
+			}).then(canvas => {
+				const image = canvas.toDataURL('image/png', 1.0);
+				const link = document.createElement('a');
+				link.download = 'infographic-cntt-hcmus.png';
+				link.href = image;
+				link.click();
+
+				// Show the button again after the screenshot is taken
+				exportBtnContainer.style.display = 'block';
+			}).catch(err => {
+				console.error('Oops, something went wrong!', err);
+				// Ensure the button is shown again even if there's an error
+				exportBtnContainer.style.display = 'block';
+			});
+		});
+
+	</script>
+</body>
+
+</html>

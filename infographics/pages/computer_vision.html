@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infographic: Thị Giác Máy Tính & Điều Khiển Học Thông Minh</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&family=Poppins:wght@700;900&display=swap"
+		rel="stylesheet">
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+	<style>
+		body {
+			font-family: 'Be Vietnam Pro', sans-serif;
+			background-color: #F7FEE7;
+			/* Lime-50 */
+			color: #1A2E05;
+			/* Dark Green */
+		}
+
+		.section-title {
+			font-weight: 900;
+			color: #365314;
+			/* Lime-900 */
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.card {
+			background-color: #FFFFFF;
+			border: 1px solid #E2E8F0;
+			/* Slate-200 */
+			transition: all 0.3s ease;
+			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+			border-radius: 0.75rem;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			border-color: #65A30D;
+			/* Lime-600 */
+			box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		}
+
+		.icon {
+			color: #65A30D;
+			/* Lime-600 */
+			width: 48px;
+			height: 48px;
+		}
+
+		.tagline {
+			font-style: italic;
+			color: #FDE047;
+			/* Yellow-300 */
+			font-weight: 500;
+		}
+
+		.cta-section {
+			background: linear-gradient(45deg, #1A2E05, #4D7C0F);
+			/* Dark Lime/Olive */
+		}
+
+		.header-bg {
+			background-image: url('https://images.unsplash.com/photo-1505682499293-233fb141754c?q=80&w=2070&auto=format&fit=crop');
+			background-size: cover;
+			background-position: center;
+			position: relative;
+		}
+
+		.header-bg::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(26, 46, 5, 0.85);
+			/* Darker overlay for better contrast */
+		}
+
+		.header-content {
+			position: relative;
+			z-index: 10;
+		}
+
+		.header-content h1,
+		.header-content p {
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		#export-btn {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+		}
+
+		.chart-label {
+			font-size: 10px;
+			fill: #365314;
+			font-weight: bold;
+			text-anchor: middle;
+		}
+
+		.special-title-font {
+			font-family: 'Poppins', 'Be Vietnam Pro', sans-serif;
+		}
+
+		.fit-hcmus-branding {
+			text-transform: lowercase;
+			color: #111B88;
+			font-family: 'Poppins', 'Be Vietnam Pro', sans-serif;
+			font-weight: 900;
+		}
+	</style>
+</head>
+
+<body class="antialiased">
+
+	<div id="export-btn">
+		<button id="download-btn"
+			class="bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-full shadow-lg flex items-center gap-2">
+			<i data-lucide="download"></i>
+			<span>Tải xuống PNG</span>
+		</button>
+	</div>
+
+	<div class="max-w-5xl mx-auto bg-white" id="infographic-content">
+
+		<!-- PHẦN 1: TIÊU ĐỀ VÀ GIỚI THIỆU -->
+		<header class="header-bg">
+			<div class="header-content text-center py-16 px-4">
+				<h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">THỊ GIÁC MÁY TÍNH & ĐIỀU KHIỂN
+					HỌC THÔNG MINH</h1>
+				<p class="tagline text-xl mt-4">"Dạy máy tính cách 'nhìn' và tương tác với thế giới"</p>
+				<p class="text-lg text-gray-100 mt-4">Khoa Công nghệ thông tin, Trường Đại học Khoa học tự nhiên –
+					ĐHQG-HCM</p>
+				<p class="text-lg text-gray-200 mt-2">"Tiên phong tri thức, kiến tạo tương lai"</p>
+			</div>
+		</header>
+
+		<main class="p-4 md:p-8">
+			<!-- PHẦN 2: BẢN CHẤT NGÀNH -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-10">Bạn Sẽ Chinh Phục Điều Gì?</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="scan" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Phân Tích Đa Phương Tiện</h3>
+						<p class="text-slate-600">Làm chủ kỹ thuật để máy tính "hiểu" nội dung từ nhiều nguồn khác nhau
+							như hình ảnh, video và âm thanh.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="toy-brick" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Điều Khiển Hệ Thống Thông Minh</h3>
+						<p class="text-slate-600">Thiết kế các hệ thống tự động có khả năng ra quyết định dựa trên dữ
+							liệu thị giác, như robot tự hành, drone.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="cuboid" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Tái Tạo Thế Giới 3D</h3>
+						<p class="text-slate-600">Nắm vững các thuật toán đồ họa và học sâu để tái tạo, mô phỏng và
+							tương tác với không gian 3D sống động.</p>
+					</div>
+					<div class="card p-6">
+						<div class="flex justify-center mb-4"><i data-lucide="hand" class="icon"></i></div>
+						<h3 class="text-xl font-bold text-slate-800 mb-2">Tương Tác Người - Máy</h3>
+						<p class="text-slate-600">Xây dựng các giao diện tự nhiên, cho phép con người và máy móc tương
+							tác hiệu quả qua cử chỉ, giọng nói và hình ảnh.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- PHẦN 3: SỰ KHÁC BIỆT -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-10">Sự Khác Biệt Của Thị Giác Máy Tính</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="space-y-6">
+						<div class="card flex items-center p-6">
+							<i data-lucide="camera" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Cảm Quan Kỹ Thuật Số</h3>
+								<p class="text-slate-600">Tập trung mô phỏng và tái tạo lại khả năng thị giác của con
+									người cho máy móc, một trong những giác quan phức tạp nhất.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="move-3d" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Tái Tạo Không Gian 3D</h3>
+								<p class="text-slate-600">Không chỉ phân tích ảnh 2D, ngành học còn đi sâu vào việc tái
+									tạo và hiểu không gian 3 chiều từ hình ảnh phẳng.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="crosshair" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Kết Hợp Phần Cứng & Phần Mềm</h3>
+								<p class="text-slate-600">Là sự giao thoa mạnh mẽ giữa thuật toán phần mềm và các thiết
+									bị phần cứng như camera, cảm biến, và bộ xử lý chuyên dụng.</p>
+							</div>
+						</div>
+						<div class="card flex items-center p-6">
+							<i data-lucide="binary" class="icon mr-6 flex-shrink-0"></i>
+							<div>
+								<h3 class="text-xl font-bold text-slate-800">Dữ Liệu Phi Cấu Trúc</h3>
+								<p class="text-slate-600">Chuyên xử lý các loại dữ liệu phức tạp và không có cấu trúc
+									như hình ảnh, video, thay vì các bảng dữ liệu truyền thống.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card overflow-hidden">
+						<img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1932&auto=format&fit=crop"
+							alt="Hình ảnh minh họa robot và thị giác máy tính" class="object-cover w-full h-full">
+					</div>
+				</div>
+			</section>
+
+			<!-- PHẦN 4: GIẢI MÃ CÁC VỊ TRÍ NGHỀ NGHIỆP -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-12">Giải Mã Các Vị Trí Nghề Nghiệp</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="scan-face" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Thị giác Máy tính</h4>
+						<p class="text-slate-600 text-sm">Phát triển các thuật toán và hệ thống nhận dạng, theo dõi và
+							phân tích đối tượng trong hình ảnh, video.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="car" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Xe tự hành</h4>
+						<p class="text-slate-600 text-sm">Xây dựng các hệ thống cảm biến và thuật toán giúp xe "nhìn" và
+							điều hướng an toàn trong môi trường thực tế.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="microscope" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Chuyên gia Xử lý ảnh Y tế</h4>
+						<p class="text-slate-600 text-sm">Phân tích hình ảnh X-quang, MRI, CT để hỗ trợ bác sĩ chẩn đoán
+							bệnh chính xác và nhanh chóng hơn.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="drone" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Robotics & Tự động hóa</h4>
+						<p class="text-slate-600 text-sm">Lập trình cho robot có khả năng nhận biết môi trường xung
+							quanh và tương tác với các vật thể một cách thông minh.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="view" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư AR/VR</h4>
+						<p class="text-slate-600 text-sm">Xây dựng các ứng dụng thực tế tăng cường và thực tế ảo, kết
+							hợp thế giới thực và thế giới số một cách liền mạch.</p>
+					</div>
+					<div class="card p-6 flex flex-col items-center text-center">
+						<i data-lucide="clapperboard" class="icon mb-4"></i>
+						<h4 class="text-lg font-bold text-slate-800 mb-2">Kỹ sư Đồ họa Máy tính</h4>
+						<p class="text-slate-600 text-sm">Phát triển thuật toán dựng hình (rendering), mô phỏng vật lý
+							và tạo kỹ xảo hình ảnh (VFX) cho game và phim ảnh.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- NEW SECTION: SẢN PHẨM & ỨNG DỤNG -->
+			<section class="my-16">
+				<h2 class="section-title text-3xl text-center mb-12">Sản Phẩm & Ứng Dụng</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="card p-6 flex items-start">
+						<i data-lucide="smartphone-nfc" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Mở khóa bằng khuôn mặt</h4>
+							<p class="text-slate-600 text-sm">Công nghệ nhận diện khuôn mặt 3D giúp bảo mật điện thoại
+								và các thiết bị cá nhân của bạn.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="shopping-cart" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Cửa hàng không người bán</h4>
+							<p class="text-slate-600 text-sm">Các hệ thống camera thông minh theo dõi sản phẩm bạn lấy
+								và tự động thanh toán khi bạn rời đi.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="gamepad-2" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Game & Giải trí Tương tác</h4>
+							<p class="text-slate-600 text-sm">Các trò chơi sử dụng camera để theo dõi chuyển động của
+								người chơi, tạo ra trải nghiệm tương tác độc đáo.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="leaf" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Nông nghiệp thông minh</h4>
+							<p class="text-slate-600 text-sm">Drone và camera phân tích hình ảnh cây trồng để phát hiện
+								sâu bệnh, đánh giá sức khỏe và tối ưu hóa năng suất.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="factory" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Kiểm tra chất lượng sản phẩm</h4>
+							<p class="text-slate-600 text-sm">Hệ thống camera tốc độ cao tự động phát hiện các sản phẩm
+								lỗi trên dây chuyền sản xuất công nghiệp.</p>
+						</div>
+					</div>
+					<div class="card p-6 flex items-start">
+						<i data-lucide="sparkles" class="icon mr-4 flex-shrink-0"></i>
+						<div>
+							<h4 class="text-lg font-bold text-slate-800 mb-2">Bộ lọc ảnh & Video (Filters)</h4>
+							<p class="text-slate-600 text-sm">Các bộ lọc (filter) ngộ nghĩnh trên Instagram, TikTok,
+								Snapchat đều được xây dựng dựa trên công nghệ này.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+	</div>
+
+	<script>
+		lucide.createIcons();
+
+		// Export to PNG logic
+		const downloadBtn = document.getElementById('download-btn');
+		const exportBtnContainer = document.getElementById('export-btn');
+		const contentToExport = document.getElementById('infographic-content');
+
+		downloadBtn.addEventListener('click', () => {
+			// Hide the button before taking the screenshot
+			exportBtnContainer.style.display = 'none';
+
+			html2canvas(contentToExport, {
+				backgroundColor: '#F7FEE7', // Match the new body background
+				useCORS: true, // For external images
+				scale: 2 // Increase resolution for better quality
+			}).then(canvas => {
+				const image = canvas.toDataURL('image/png', 1.0);
+				const link = document.createElement('a');
+				link.download = 'infographic-thigiacmaytinh-hcmus.png';
+				link.href = image;
+				link.click();
+
+				// Show the button again after the screenshot is taken
+				exportBtnContainer.style.display = 'block';
+			}).catch(err => {
+				console.error('Oops, something went wrong!', err);
+				// Ensure the button is shown again even if there's an error
+				exportBtnContainer.style.display = 'block';
+			});
+		});
+
+	</script>
+</body>
+
+</html>
